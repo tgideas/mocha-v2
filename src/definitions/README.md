@@ -2,4 +2,5 @@
 - globals 全局、基础
 - layout  布局 
 - views   视图
+- interaction   交互
 - form    表单
