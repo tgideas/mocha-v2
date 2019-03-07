@@ -4,5 +4,11 @@
 
 /*  theme */
 .book-summary{background-color: #fff;}
-.book-summary ul.summary li.chapter {border-top:1px solid #ddd;}
-.book-summary ul.summary li>s
+.book-body{background-color: #fdfdfd;}
+.book-body h1, .book-body h2, .book-body h3{border-bottom:1px solid #e5e5e5;padding-bottom:0.5em;}
+#book-search-input{border:0;}
+#book-search-input input,#book-search-input input:hover{border:1px solid #ededed;border-radius:20px;}
+#book-search-input input:focus{border-color: #008cff;}
+.book-summary ul.summary li ul{padding-bottom:10px;}
+.book-summary ul.summary>li.chapter {margin:0 25px;border-top:1px solid #ededed;}
+.book-summary ul.summary li>span{font-size:0.8em;color: #888;}
