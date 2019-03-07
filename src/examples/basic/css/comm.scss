@@ -1,0 +1,35 @@
+//字体
+$comm-fontfamily:Helvetica,
+Tahoma,
+Arial,
+"PingFang SC",
+STXihei,
+"Microsoft yahei",
+"WenQuanYi Micro Hei",
+sans-serif;
+//字号
+$comm-fontsize:16px;
+$comm-titlesize:26px;
+$comm-subsize:22px;
+$comm-decssize:20px;
+//字体颜色
+$comm-fontcolor:#323235;
+//行高
+$comm-lineheight:1.6;
+//颜色
+$comm-color:#e4e4e4;
+$comm-lightcolor:#f2f2f2;
+$comm-darkcolor:#cccccc;
+//间距
+$comm-margin:10px;
+$comm-blockmargin:15px;
+//圆角
+$comm-radius:6px;
+//背景颜色
+$comm-background:#ffffff;
+
+
+body {
+  font-size: $comm-fontfamily;
+  color: $comm-fontcolor;
+}
