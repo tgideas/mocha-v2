@@ -1,0 +1,8 @@
+.gitbook-link {
+    display: none !important;
+}
+
+/*  theme */
+.book-summary{background-color: #fff;}
+.book-summary ul.summary li.chapter {border-top:1px solid #ddd;}
+.book-summary ul.summary li>s

@@ -1,6 +1,8 @@
 # Path
 docs
 _book
+.DS_Store
+
 # Logs
 logs
 *.log

@@ -1,0 +1,33 @@
+{
+    "title": "MochaUI",
+    "styles": {
+        "website": "assets/mocha-book-style.css"
+    },
+    "plugins": [
+        "codeblock-filename",
+        "sectionx",
+        "prism",
+        "-highlight",
+        "-sharing",
+        "anchors",
+        "anchor-navigation-ex",
+        "copy-code-button",
+        "tbfed-pagefooter"
+    ],
+    "pluginsConfig": {
+        "sectionx": {
+            "tag": "b"
+        },
+        "prism": {
+            "css": [
+              "prismjs/themes/prism-atom-dark.css"
+            ]
+        },
+        "tbfed-pagefooter": {
+            "copyright":"MochaUI Copyright &copy TGideas",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
+
+}
