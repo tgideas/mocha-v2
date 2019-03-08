@@ -1,0 +1,87 @@
+@import "../../basic/css/comm";
+
+//卡片默认样式配置
+$card-bgcolor: #eee;
+$card-padding:10px;
+$card-raidus:4px;
+$card-width:600px;
+$card-border-color: #dddddd;
+
+//是否添加上下边框
+@mixin generateBorder($direction, $color) {
+  border-#{$direction}: 1px solid $color;
+}
+
+.mo-card {
+  width: $card-width;
+  border-radius: $card-raidus;
+  border: 1px solid $card-border-color;
+  margin: $comm-margin;
+}
+
+.mo-card-header {
+  position: relative;
+  border-bottom: 1px solid $card-border-color;
+  padding: $card-padding;
+  background-color: $card-bgcolor;
+}
+
+.mo-card-body {
+  padding: $card-padding;
+}
+
+.mo-card-footer {
+  padding: $card-padding;
+  border-top: 1px solid $card-border-color;
+}
+
+//情境效果
+.mo-card-Primary,
+.mo-card-Primary .mo-card-header,
+.mo-card-Primary .mo-card-footer {
+  border-color: $comm-primary;
+}
+
+.mo-card-Primary .mo-card-header {
+  background-color: $comm-primary;
+}
+
+.mo-card-Success,
+.mo-card-Success .mo-card-header,
+.mo-card-Success .mo-card-footer {
+  border-color: $comm-success;
+}
+
+.mo-card-Success .mo-card-header {
+  background-color: $comm-success;
+}
+
+.mo-card-Info,
+.mo-card-Info .mo-card-header,
+.mo-card-Info .mo-card-footer {
+  border-color: $comm-info;
+}
+
+.mo-card-Info .mo-card-header {
+  background-color: $comm-info;
+}
+
+.mo-card-Warning,
+.mo-card-Warning .mo-card-header,
+.mo-card-Warning .mo-card-footer {
+  border-color: $comm-warning;
+}
+
+.mo-card-Warning .mo-card-header {
+  background-color: $comm-warning;
+}
+
+.mo-card-Danger,
+.mo-card-Danger .mo-card-header,
+.mo-card-Danger .mo-card-footer {
+  border-color: $comm-danger;
+}
+
+.mo-card-Danger .mo-card-header {
+  background-color: $comm-danger;
+}
