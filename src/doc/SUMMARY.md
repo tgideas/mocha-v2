@@ -10,7 +10,7 @@
 * 布局
     * [栅格系统](Layout/columns.md)
     * [卡片布局](Layout/card.md)
-    * [flex布局](Layout/flex.md)
+    * [常用布局](Layout/layout.md)
 * 视图
     * [导航](View/navigation.md)
     * [按钮](View/button.md)

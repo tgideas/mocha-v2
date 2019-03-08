@@ -20,6 +20,13 @@ $comm-lineheight:1.6;
 $comm-color:#e4e4e4;
 $comm-lightcolor:#f2f2f2;
 $comm-darkcolor:#cccccc;
+
+$comm-default:#ffffff;
+$comm-primary:#337ab7;
+$comm-success:#5cb85c;
+$comm-info:#5bc0de;
+$comm-warning:#f0ad4e;
+$comm-danger:#d9534f;
 //间距
 $comm-margin:10px;
 $comm-blockmargin:15px;
@@ -32,4 +39,21 @@ $comm-background:#ffffff;
 body {
   font-size: $comm-fontfamily;
   color: $comm-fontcolor;
+}
+
+h1 {
+  font-size: $comm-titlesize;
+}
+
+h2 {
+  font-size: $comm-subsize;
+}
+
+h3 {
+  font-size: $comm-decssize;
+}
+
+h4,
+p {
+  font-size: $comm-fontsize;
 }
