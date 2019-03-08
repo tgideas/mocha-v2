@@ -1,10 +1,10 @@
-.gitbook-link {
-    display: none !important;
-}
+/* Ui */
+.gitbook-link {display: none !important;}
+.page-inner{max-width:none;padding-left:90px;padding-right:90px;}
 
 /*  theme */
 .book-summary{background-color: #fff;}
-.book-body{background-color: #fdfdfd;}
+.book-body{background-color: #f9f9f9;}
 .book-body h1, .book-body h2, .book-body h3{border-bottom:1px solid #e5e5e5;padding-bottom:0.5em;}
 #book-search-input{border:0;}
 #book-search-input input,#book-search-input input:hover{border:1px solid #ededed;border-radius:20px;}
@@ -12,3 +12,8 @@
 .book-summary ul.summary li ul{padding-bottom:10px;}
 .book-summary ul.summary>li.chapter {margin:0 25px;border-top:1px solid #ededed;}
 .book-summary ul.summary li>span{font-size:0.8em;color: #888;}
+.copy-code-button{position:absolute;right: 0;top:0;background-color: #9E9E9E;color: white;border-radius: 0px 0px 0px 5px;border: 1px solid rgb(150,150,150);z-index: 1;font-size: 80%;}
+.markdown-section p{position: relative;}
+.iframe-wrap{position: relative;width: 419px;height:796px;padding: 58px 22px 18px;background-color: #fff;box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.2);border-radius: 70px;}
+.iframe-mobile{}
+.iframe-mobile-mark{position: absolute;left:0;top:0; width:419px;height: 800px;background: url(/assets/iframe_iphonex.png) no-repeat;-moz-background-size: contain;background-size: contain;pointer-events: none;}
