@@ -10,6 +10,7 @@
         "-highlight",
         "-sharing",
         "anchors",
+        "header",
         "copy-code-button",
         "tbfed-pagefooter",
         "include-codeblock"
@@ -32,6 +33,9 @@
             "template": "default",
             "unindent": true,
             "theme": "monokai"
+        },
+        "layout": {
+            "headerPath" : "assets/header.html"
         }
     }
 
