@@ -1,0 +1,43 @@
+//列表组基本配置
+$list-paddingtb: 10px;
+$list-paddinglr: 15px;
+$list-border-color: #cccccc;
+$list-radius: 4px;
+
+.list-group-item {
+  position: relative;
+  padding: $list-paddingtb $list-paddinglr;
+  border: 1px solid $list-border-color;
+  margin-bottom: -1px;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: $list-radius;
+  border-top-right-radius: $list-radius;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: $list-radius;
+  border-bottom-right-radius: $list-radius;
+}
+
+.list-group-item-Borderbottom {
+  position: relative;
+  padding: $list-paddingtb $list-paddinglr;
+  border-bottom: 1px solid $list-border-color;
+}
+
+.list-group-item-Borderbottom:last-child {
+  border-bottom: none;
+}
+
+.list-group-item .badge,
+.list-group-item-Borderbottom .badge {
+  position: absolute;
+  right: $list-paddinglr;
+}
+
+.list-group-item a,
+.list-group-item-Borderbottom a {
+  display: block;
+}

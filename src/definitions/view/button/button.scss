@@ -1,0 +1,56 @@
+@import "../../basic/css/comm";
+
+//按钮默认样式配置
+$btn-radius: 6px;
+$btn-border: 1px solid transparent;
+$btn-paddingtb: 6px;
+$btn-paddinglr: 12px;
+$btn-fontcolor:$comm-fontcolor;
+
+.mo-btn {
+  display: inline-block;
+  border: $btn-border;
+  border-radius: $btn-radius;
+  cursor: pointer;
+  text-decoration: none;
+  padding: $btn-paddingtb $btn-paddinglr;
+}
+
+.mo-btn.mo-btn-Disable {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.mo-btn-Default {
+  border-color: #cccccc;
+}
+
+.mo-btn-Primary {
+  border-color: #2e6da4;
+  background-color: $comm-primary;
+  color: #fff;
+}
+
+.mo-btn-Success {
+  border-color: #4cae4c;
+  background-color: $comm-success;
+  color: #fff;
+}
+
+.mo-btn-Info {
+  border-color: #46b8da;
+  background-color: $comm-info;
+  color: #fff;
+}
+
+.mo-btn-Warning {
+  border-color: #eea236;
+  background-color: $comm-warning;
+  color: #fff;
+}
+
+.mo-btn-Danger {
+  border-color: #d43f3a;
+  background-color: $comm-danger;
+  color: #fff;
+}

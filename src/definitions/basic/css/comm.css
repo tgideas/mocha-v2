@@ -3,6 +3,11 @@ body {
   color: #323235;
 }
 
+a {
+  text-decoration: none;
+  color: #323235;
+}
+
 h1 {
   font-size: 26px;
 }

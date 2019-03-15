@@ -1,0 +1,63 @@
+@import "../../basic/css/mixin";
+
+//导航默认样式配置
+$navbar-lineheight:40px;
+$navbar-padding:20px;
+
+$navbar-tabs-hightlight: #337ab7;
+$navbar-tab-color: #ffffff;
+
+$navbar-pills-hightlight: #337ab7;
+$navbar-pills-color: #ffffff;
+$navbar-pills-raidus: 6px;
+
+.mo-navbar {
+  @include clearfix;
+}
+
+.mo-navbar li {
+  @include pull-left;
+  display: block;
+}
+
+.mo-navbar li a {
+  display: block;
+  line-height: $navbar-lineheight;
+  padding: 0 $navbar-padding;
+  text-decoration: none;
+}
+
+//tabs效果
+.mo-navbar-Tabs li {
+  border-bottom: 3px solid transparent;
+}
+
+.mo-navbar-Tabs .mo-navbar-current {
+  border-bottom-color: $navbar-tabs-hightlight;
+}
+
+.mo-navbar-Tabs .mo-navbar-current a {
+  color: $navbar-tabs-hightlight;
+}
+
+//pills效果
+.mo-navbar-Pills .mo-navbar-current {
+  border-radius: $navbar-pills-raidus;
+  background: $navbar-pills-hightlight;
+}
+
+.mo-navbar-Pills .mo-navbar-current a {
+  color: $navbar-pills-color
+}
+
+.mo-navbar-Default li {
+  background: #cccccc;
+}
+
+.mo-navbar-Default .mo-navbar-current {
+  background: $navbar-pills-hightlight;
+}
+
+.mo-navbar-Default .mo-navbar-current a {
+  color: $navbar-pills-color
+}
