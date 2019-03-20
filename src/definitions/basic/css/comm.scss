@@ -41,6 +41,11 @@ body {
   color: $comm-fontcolor;
 }
 
+a {
+  text-decoration: none;
+  color: $comm-fontcolor;
+}
+
 h1 {
   font-size: $comm-titlesize;
 }
