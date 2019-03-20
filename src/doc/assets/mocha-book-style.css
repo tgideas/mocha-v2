@@ -4,7 +4,7 @@
 
 /* header */
 .gitbook-header{height:64px;position: relative;z-index:10;background:#fff;box-shadow:0px 4px 3px #ececec; }
-.gitbook-header-logo{position: absolute;left:20px;top:10px;width:200px;height:40px;background-color:#ddd;}
+.gitbook-header-logo{position: absolute;left:20px;top:10px;width:280px;height:40px;border-right:1px solid #ededed}
 .gitbook-header-logo h1{margin-top:0;}
 .gitbook-header-nav{position: absolute;right:20px;top:0x;}
 .gitbook-header-nav ul{letter-spacing: -0.25em;}
@@ -26,6 +26,21 @@
 .book-summary ul.summary li>span{font-size:0.8em;color: #888;}
 .copy-code-button{position:absolute;right: 0;top:0;background-color: #9E9E9E;color: white;border-radius: 0px 0px 0px 5px;border: 1px solid rgb(150,150,150);z-index: 1;font-size: 80%;}
 .markdown-section p{position: relative;}
-.iframe-wrap{position: relative;width: 419px;height:796px;padding: 58px 22px 18px;background-color: #fff;box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.2);border-radius: 70px;}
-.iframe-mobile{}
+.iframe-wrap{position: relative;width: 419px;height:792px;padding:60px 22px 20px;background-color: #fff;box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.2);border-radius: 70px;}
 .iframe-mobile-mark{position: absolute;left:0;top:0; width:419px;height: 800px;background: url(/assets/iframe_iphonex.png) no-repeat;-moz-background-size: contain;background-size: contain;pointer-events: none;}
+
+/* prev code */
+.example-prev{position: relative;transition: all 0.2s;}
+.example-prev-code{position: absolute;right:0;top:-54px;width:32px;height:24px;}
+.markdown-section .example-prev-code{background: url(/assets/icon-showcode.png) no-repeat; background-size:100% auto;}
+.example-prev.show-code{padding:44px 14px 14px 14px;margin-bottom:-10px;background-color:#fff;border-radius:0.3em;border:1px solid #e5e5e5;}
+.example-prev.show-code:before{overflow:hidden;position: absolute;left:0;top:0px;width:100%;line-height:30px;height:30px;font-weight:bold;color:#666;background-color:#f1f1f1;border-bottom:1px solid #e5e5e5;padding:0 14px;font-size:11px;content:"Example"}
+pre.language-{display: none;}
+
+@media(max-width:600px){
+    .book-body .body-inner,.book-summary{padding-top:50px;}
+    .gitbook-header{height:48px;}
+    .page-inner{padding-left:15px;padding-right:15px;}
+    .gitbook-header-logo{top:4px;}
+    .gitbook-header h1{font-size:18px;}
+}

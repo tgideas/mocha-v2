@@ -4,18 +4,24 @@
         "website": "assets/mocha-book-style.css"
     },
     "plugins": [
+        "custom-js-css",
         "codeblock-filename",
         "sectionx",
         "prism",
         "-highlight",
         "-sharing",
-        "anchors",
         "header",
         "copy-code-button",
         "tbfed-pagefooter",
-        "include-codeblock"
+        "include-codeblock",
+        "anchor-navigation-ex"
     ],
     "pluginsConfig": {
+        "custom-js-css": {
+            "js": [
+              "assets/mocha-book-script.js"
+            ]
+        },
         "sectionx": {
             "tag": "b"
         },
@@ -36,6 +42,14 @@
         },
         "layout": {
             "headerPath" : "assets/header.html"
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "associatedWithSummary": true,
+            "printLog": false,
+            "multipleH1": true,
+            "mode": "float",
+            "showGoTop":true
         }
     }
 
