@@ -1,0 +1,44 @@
+//slider基本配置
+$slider-ctrlsize: 12px;
+$slider-ctrlcolor: #fff;
+$slider-ctrlactive: #000;
+
+.mo-slider-container {
+  position: relative;
+}
+
+.mo-slider-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.mo-slider-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.mo-slider-ctrl {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.mo-slider-ctrl li {
+  display: inline-block;
+  width: $slider-ctrlsize;
+  height: $slider-ctrlsize;
+  background-color: $slider-ctrlcolor;
+  border-radius: 50%;
+}
+
+.mo-slider-ctrl .mo-slider-cur {
+  background-color: $slider-ctrlactive;
+}

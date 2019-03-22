@@ -1,0 +1,61 @@
+body {
+  font-size: Helvetica, Tahoma, Arial, "PingFang SC", STXihei, "Microsoft yahei", "WenQuanYi Micro Hei", sans-serif;
+  color: #323235;
+}
+
+a {
+  text-decoration: none;
+  color: #323235;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4,
+p {
+  font-size: 16px;
+}
+
+.mo-article {
+  width: 660px;
+  margin: 0 auto;
+}
+
+.mo-article-title {
+  font-size: 26px;
+  text-align: center;
+}
+
+.mo-article-subtitle {
+  font-size: 12px;
+  text-align: center;
+}
+
+.mo-article-time {
+  font-size: 12px;
+  text-align: center;
+}
+
+.mo-article-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.mo-article-content p {
+  margin: 10px 0;
+}
+
+.mo-article-content img {
+  width: auto;
+  max-width: 100% !important;
+  height: auto !important;
+}

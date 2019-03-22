@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?bv8ka7');
+  src:  url('fonts/icomoon.eot?bv8ka7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bv8ka7') format('truetype'),
+    url('fonts/icomoon.woff?bv8ka7') format('woff'),
+    url('fonts/icomoon.svg?bv8ka7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="mo-"], [class*=" mo-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mo-triangle-down:before {
+  content: "\e900";
+}
+.mo-arrow-down:before {
+  content: "\e901";
+}
+.mo-solid-comment:before {
+  content: "\e902";
+}
+.mo-hollow-comment:before {
+  content: "\e903";
+}
+.mo-triangle-left:before {
+  content: "\e904";
+}
+.mo-arrow-left:before {
+  content: "\e905";
+}
+.mo-solid-like:before {
+  content: "\e906";
+}
+.mo-hollow-like:before {
+  content: "\e907";
+}
+.mo-solid-player:before {
+  content: "\e908";
+}
+.mo-hollow-player:before {
+  content: "\e909";
+}
+.mo-triangle-right:before {
+  content: "\e90c";
+}
+.mo-arrow-right:before {
+  content: "\e90d";
+}
+.mo-solid-search:before {
+  content: "\e90e";
+}
+.mo-triangle-top:before {
+  content: "\e90f";
+}
+.mo-arrow-top:before {
+  content: "\e910";
+}
+.mo-solid-view:before {
+  content: "\e911";
+}
+.mo-hollow-view:before {
+  content: "\e912";
+}

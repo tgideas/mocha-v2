@@ -1,0 +1,20 @@
+$breadcrumb-color: #337ab7;
+$breadcrumb-active: #777777;
+
+.mo-breadcrumb li {
+  display: block;
+  float: left;
+}
+
+.mo-breadcrumb a {
+  color: $breadcrumb-color;
+}
+
+.mo-breadcrumb .active a {
+  color: $breadcrumb-active;
+}
+
+.mo-breadcrumb>li+li:before {
+  content: "/";
+  padding: 5px;
+}
