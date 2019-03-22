@@ -1,0 +1,65 @@
+@import "../../basic/css/mixin";
+
+//tab基本配置
+$tab-lineheight:40px;
+$tab-padding:20px;
+
+$tab-tabs-hightlight: #337ab7;
+$tab-tab-color: #ffffff;
+
+$tab-pills-hightlight: #337ab7;
+$tab-pills-color: #ffffff;
+$tab-pills-raidus: 6px;
+
+.mo-tab-ctrl {
+  @include clearfix;
+  width: 100%;
+}
+
+.mo-tab-ctrl li {
+  @include pull-left;
+  display: block;
+  line-height: $tab-lineheight;
+  padding: 0 $tab-padding;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+//tabs效果
+.mo-tab-Tabs {
+  border-bottom: 3px solid #ddd;
+}
+
+.mo-tab-Tabs li {
+  margin-bottom: -3px;
+  border-bottom: 3px solid transparent;
+}
+
+.mo-tab-Tabs .mo-tab-current {
+  border-bottom-color: $tab-tabs-hightlight;
+  color: $tab-tabs-hightlight;
+}
+
+//pills效果
+.mo-tab-Pills .mo-tab-current {
+  border-radius: $tab-pills-raidus;
+  background: $tab-pills-hightlight;
+  color: $tab-pills-color;
+}
+
+//默认效果
+.mo-tab-Default {
+  background: #cccccc;
+}
+
+.mo-tab-Default .mo-tab-current {
+  background: $tab-pills-hightlight;
+  color: $tab-pills-color;
+}
+
+//content部分效果
+.mo-tab-content {
+  border: 1px solid #ddd;
+  border-top-color: transparent;
+  padding: 10px 15px;
+}

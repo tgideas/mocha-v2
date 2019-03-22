@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="gbk">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="robots" content="all">
+  <meta name="Copyright" content="Tencent">
+  <meta name="Description" content="" />
+  <meta name="Keywords" content="" />
+  <link rel="stylesheet" href="../definitions/basic/css/reset.min.css">
+  <link rel="stylesheet" href="../definitions/basic/css/comm.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../definitions/interaction/slider/slider.min.css">
+  <style>
+    .mo-slider-container {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .mo-triangle-left,
+    .mo-triangle-right {
+      font-size: 30px;
+    }
+
+    .mow-slider-panel {
+      font-size: 100px;
+      line-height: 400px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .mow-slider-panel:nth-child(1) {
+      background: #409EFF
+    }
+
+    .mow-slider-panel:nth-child(2) {
+      background: #67C23A
+    }
+
+    .mow-slider-panel:nth-child(3) {
+      background: #E6A23C
+    }
+
+    .mow-slider-panel:nth-child(4) {
+      background: #F56C6C
+    }
+
+    .mow-slider-panel:nth-child(5) {
+      background: #909399
+    }
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <div id="#slider" class="mow-slider-container mo-slider-container">
+    <div class="mow-slider-wrapper mo-slider-wrapper">
+      <div class="mow-slider-panel mo-slider-panel">1</div>
+      <div class="mow-slider-panel mo-slider-panel">2</div>
+      <div class="mow-slider-panel mo-slider-panel">3</div>
+      <div class="mow-slider-panel mo-slider-panel">4</div>
+      <div class="mow-slider-panel mo-slider-panel">5</div>
+    </div>
+    <div class="mo-slider-prev"><span class="mo-triangle-left"></span></div>
+    <div class="mo-slider-next"><span class="mo-triangle-right"></span></div>
+    <ol class="mo-slider-ctrl">
+      <li class="mo-slider-cur"></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
+</body>
+<script src="mow.js"></script>
+<script>
+  slider = mow.swiper('#slider', {
+    index: 0,
+    effect: 'fade',
+    direction: 'y',
+    autoplay: 0,
+    speed: 500,
+    ease: 'linear'
+  }).on('afterchange', function (before, index) {
+
+  })
+
+  document.getElementsByClassName('mo-slider-prev')[0].onclick = function () {
+    slider.prev()
+  }
+  document.getElementsByClassName('mo-slider-next')[0].onclick = function () {
+    slider.next()
+  }
+</script>
+
+</html>

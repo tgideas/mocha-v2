@@ -109,15 +109,6 @@ $height 最小高度值
 }
 ```
 
-- 圆角  
-$radius 圆角值
-
-```css
-@mixin border-radius($radius) {
-  border-radius: $radius;
-}
-```
-
 - 三角形   
 $direction 三角形的方向，默认：left，可选：left/right/top/bottom  
 $size 三角形的大小，默认：5px  
