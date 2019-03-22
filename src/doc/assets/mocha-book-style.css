@@ -30,7 +30,7 @@
 .iframe-mobile-mark{position: absolute;left:0;top:0; width:419px;height: 800px;background: url(/assets/iframe_iphonex.png) no-repeat;-moz-background-size: contain;background-size: contain;pointer-events: none;}
 
 /* prev code */
-.example-prev{position: relative;transition: all 0.2s;}
+.example-prev{position: relative;transition:box-shadow 0.2s ease,padding 0.2s ease;}
 .example-prev-code{position: absolute;right:0;top:-54px;width:32px;height:24px;}
 .markdown-section .example-prev-code{background: url(/assets/icon-showcode.png) no-repeat; background-size:100% auto;}
 .example-prev.show-code{padding:44px 14px 14px 14px;margin-bottom:-10px;background-color:#fff;border-radius:0.3em;border:1px solid #e5e5e5;}
