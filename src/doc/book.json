@@ -4,6 +4,7 @@
         "website": "assets/mocha-book-style.css"
     },
     "plugins": [
+        "scripts",
         "custom-js-css",
         "codeblock-filename",
         "sectionx",
@@ -17,9 +18,9 @@
         "anchor-navigation-ex"
     ],
     "pluginsConfig": {
-        "custom-js-css": {
-            "js": [
-              "assets/mocha-book-script.js"
+        "scripts": {
+            "files": [
+                "assets/mocha-book-script.js"
             ]
         },
         "sectionx": {
