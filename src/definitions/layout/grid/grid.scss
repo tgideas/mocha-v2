@@ -1,22 +1,19 @@
-//栅格默认样式配置
-$grid-height:50px;
-$grid-pdvalue:10px;
-$grid-bgcolor:#eee;
-$grid-bdcolor:#999;
-$grid-bdwidth:1px;
+@import "../../basic/css/comm";
 
-@import "../../basic/css/mixin";
+//栅格默认样式配置
+$grid-padding:$comm-padding-sm;
+$grid-bgcolor:$color-grey-light;
 
 @mixin innerStyle {
-  height: $grid-height;
   background-color: $grid-bgcolor;
-  border: $grid-bdwidth solid $grid-bdcolor;
+  @include borderSolid;
+  padding: $grid-padding;
 }
 
 @mixin outerStyle {
   @include pull-left;
   box-sizing: border-box;
-  padding: $grid-pdvalue;
+  padding: $grid-padding;
 }
 
 //栅格化

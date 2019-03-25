@@ -19,7 +19,7 @@
     "pluginsConfig": {
         "custom-js-css": {
             "js": [
-              "assets/mocha-book-script.js"
+                "assets/mocha-book-script.js"
             ]
         },
         "sectionx": {
@@ -27,11 +27,11 @@
         },
         "prism": {
             "css": [
-              "prismjs/themes/prism-atom-dark.css"
+                "prismjs/themes/prism-atom-dark.css"
             ]
         },
         "tbfed-pagefooter": {
-            "copyright":"MochaUI Copyright &copy TGideas",
+            "copyright": "MochaUI Copyright &copy TGideas",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -41,7 +41,7 @@
             "theme": "monokai"
         },
         "layout": {
-            "headerPath" : "assets/header.html"
+            "headerPath": "assets/header.html"
         },
         "anchor-navigation-ex": {
             "showLevel": false,
@@ -49,7 +49,7 @@
             "printLog": false,
             "multipleH1": true,
             "mode": "float",
-            "showGoTop":true
+            "showGoTop": true
         }
     }
 

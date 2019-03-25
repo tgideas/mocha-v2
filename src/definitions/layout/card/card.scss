@@ -1,27 +1,21 @@
 @import "../../basic/css/comm";
 
 //卡片默认样式配置
-$card-bgcolor: #eee;
-$card-padding:10px;
-$card-raidus:4px;
+$card-bgcolor: $color-grey-lighter;
+$card-padding:$comm-padding-md;
+$card-margin: $comm-margin-md;
 $card-width:600px;
-$card-border-color: #dddddd;
-
-//是否添加上下边框
-@mixin generateBorder($direction, $color) {
-  border-#{$direction}: 1px solid $color;
-}
 
 .mo-card {
   width: $card-width;
-  border-radius: $card-raidus;
-  border: 1px solid $card-border-color;
-  margin: $comm-margin;
+  @include borderRadius;
+  @include borderSolid;
+  margin: $card-margin;
 }
 
 .mo-card-header {
   position: relative;
-  border-bottom: 1px solid $card-border-color;
+  @include borderSolid($direction: bottom);
   padding: $card-padding;
   background-color: $card-bgcolor;
 }
@@ -32,56 +26,56 @@ $card-border-color: #dddddd;
 
 .mo-card-footer {
   padding: $card-padding;
-  border-top: 1px solid $card-border-color;
+  @include borderSolid($direction: top);
 }
 
 //情境效果
 .mo-card-Primary,
 .mo-card-Primary .mo-card-header,
 .mo-card-Primary .mo-card-footer {
-  border-color: $comm-primary;
+  border-color: $color-default-light;
 }
 
 .mo-card-Primary .mo-card-header {
-  background-color: $comm-primary;
+  background-color: $color-default;
 }
 
 .mo-card-Success,
 .mo-card-Success .mo-card-header,
 .mo-card-Success .mo-card-footer {
-  border-color: $comm-success;
+  border-color: $color-success-light;
 }
 
 .mo-card-Success .mo-card-header {
-  background-color: $comm-success;
+  background-color: $color-success;
 }
 
 .mo-card-Info,
 .mo-card-Info .mo-card-header,
 .mo-card-Info .mo-card-footer {
-  border-color: $comm-info;
+  border-color: $color-info-light;
 }
 
 .mo-card-Info .mo-card-header {
-  background-color: $comm-info;
+  background-color: $color-info;
 }
 
 .mo-card-Warning,
 .mo-card-Warning .mo-card-header,
 .mo-card-Warning .mo-card-footer {
-  border-color: $comm-warning;
+  border-color: $color-warning-light;
 }
 
 .mo-card-Warning .mo-card-header {
-  background-color: $comm-warning;
+  background-color: $color-warning;
 }
 
 .mo-card-Danger,
 .mo-card-Danger .mo-card-header,
 .mo-card-Danger .mo-card-footer {
-  border-color: $comm-danger;
+  border-color: $color-danger-light;
 }
 
 .mo-card-Danger .mo-card-header {
-  background-color: $comm-danger;
+  background-color: $color-danger;
 }

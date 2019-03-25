@@ -136,12 +136,12 @@
 <p>基础灰色</p>
 <p>#cccccc</p>
 </li>
-<li style="background-color:#e9e9e9">
-<p>基础灰色(Light)</p>
-<p>#e9e9e9</p>
-</li>
 <li style="background-color:#e0e0e0">
-<p>基础灰色(Lighter)</p>
+<p>基础灰色(Light)</p>
 <p>#e0e0e0</p>
+</li>
+<li style="background-color:#e9e9e9">
+<p>基础灰色(Lighter)</p>
+<p>#e9e9e9</p>
 </li>
 </ul>

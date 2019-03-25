@@ -8,6 +8,7 @@
     * [字体字号](Basic/font.md)
     * [基础颜色](Basic/color.md)
     * [样式特效](Basic/mixin.md)
+    * [基础边框](Basic/border.md)
     * [基础icon](Basic/icon.md)
 * 布局
     * [栅格系统](Layout/columns.md)

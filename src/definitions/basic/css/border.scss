@@ -1,0 +1,30 @@
+@import 'color';
+
+// border
+$border-color:$color-grey-light;
+$border-width:1px;
+
+@mixin borderDashed($width: $border-width, $color:$border-color, $direction:all) {
+  @if $direction==all {
+    border: $width dashed $color;
+  }
+
+  @else {
+    border-#{$direction}: $width dashed $color;
+  }
+}
+
+@mixin borderSolid($width: $border-width, $color:$border-color, $direction:all) {
+  @if $direction==all {
+    border: $width solid $color;
+  }
+
+  @else {
+    border-#{$direction}: $width solid $color;
+  }
+}
+
+//radius
+@mixin borderRadius($radius: 2) {
+  border-radius: 2px;
+}
