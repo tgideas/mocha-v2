@@ -4,7 +4,7 @@
 var mochaBook = (function () {
     var util = {}, init = function () { };
     util.showCode = function () {
-        $("div.page-wrapper").on("click", "a.example-prev-code", function () {
+        $(document).on("click", "a.example-prev-code", function () {
             var $examplePrev = $(this).parent();
             var $pre = $examplePrev.next();
             $examplePrev.toggleClass("show-code");
