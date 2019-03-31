@@ -17,3 +17,33 @@ $font-smallsize: 12px;
 
 //行高
 $font-lineheight:1.6;
+
+
+body {
+  font-family: $font-fontfamily;
+}
+
+h1,
+.mo-article-title {
+  font-size: $font-titlesize;
+}
+
+h2,
+.mo-article-subtitle {
+  font-size: $font-subsize;
+}
+
+h3,
+.mo-article-time {
+  font-size: $font-decssize;
+}
+
+p,
+.mo-article-content {
+  font-size: $font-fontsize;
+  line-height: $font-lineheight;
+}
+
+.mo-font-small {
+  font-size: $font-smallsize;
+}

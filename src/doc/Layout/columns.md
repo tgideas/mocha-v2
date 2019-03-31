@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="http://localhost:8080/src/definitions/layout/grid/grid.min.css">
 <style>
+    .mo-wrapper {color: #fff;}
   .mo-inner{text-align:center;font-size:12px;}
 </style>
 

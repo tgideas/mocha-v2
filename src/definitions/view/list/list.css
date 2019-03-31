@@ -1,8 +1,160 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
 .list-group-item {
   position: relative;
   padding: 10px 15px;
-  border: 1px solid #cccccc;
+  border: 1px solid #337ab7;
   margin-bottom: -1px;
+}
+
+.list-group-item a,
+.list-group-item-Borderbottom a {
+  text-decoration: none;
+  color: #595a5c;
+}
+
+.list-group-item a:hover,
+.list-group-item-Borderbottom a:hover {
+  text-decoration: none;
+  color: #838385;
 }
 
 .list-group-item:first-child {
@@ -18,15 +170,15 @@
 .list-group-item-Borderbottom {
   position: relative;
   padding: 10px 15px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #337ab7;
 }
 
 .list-group-item-Borderbottom:last-child {
   border-bottom: none;
 }
 
-.list-group-item .badge,
-.list-group-item-Borderbottom .badge {
+.list-group-item .badge-tips,
+.list-group-item-Borderbottom .badge-tips {
   position: absolute;
   right: 15px;
 }

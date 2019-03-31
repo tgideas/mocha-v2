@@ -1,15 +1,11 @@
-@import "../../basic/css/mixin";
+@import "../../basic/css/comm";
 
 //导航默认样式配置
-$navbar-lineheight:40px;
-$navbar-padding:20px;
+$navbar-lineheight:50px;
+$navbar-padding:$comm-padding-lg;
+$navbar-margin:$comm-margin-lg;
 
-$navbar-tabs-hightlight: #337ab7;
-$navbar-tab-color: #ffffff;
-
-$navbar-pills-hightlight: #337ab7;
-$navbar-pills-color: #ffffff;
-$navbar-pills-raidus: 6px;
+$navbar-cur-color: $color-default;
 
 .mo-navbar {
   @include clearfix;
@@ -27,39 +23,47 @@ $navbar-pills-raidus: 6px;
   text-decoration: none;
 }
 
+.mo-navbar li a:hover {
+  text-decoration: none;
+}
+
 //tabs效果
 .mo-navbar-Tabs li {
-  border-bottom: 3px solid transparent;
+  @include borderSolid($width: 3px, $color: transparent, $direction:bottom);
+}
+
+.mo-navbar-Tabs li a {
+  color: $color-font;
 }
 
 .mo-navbar-Tabs .mo-navbar-current {
-  border-bottom-color: $navbar-tabs-hightlight;
+  @include borderSolid($width: 3px, $color: $navbar-cur-color, $direction:bottom);
 }
 
 .mo-navbar-Tabs .mo-navbar-current a {
-  color: $navbar-tabs-hightlight;
+  color: $navbar-cur-color;
 }
 
 //pills效果
 .mo-navbar-Pills .mo-navbar-current {
-  border-radius: $navbar-pills-raidus;
-  background: $navbar-pills-hightlight;
+  @include borderRadius($radius: 6px);
+  background: $navbar-cur-color;
 }
 
 .mo-navbar-Pills .mo-navbar-current a {
-  color: $navbar-pills-color
+  color: #ffffff;
 }
 
 
 //默认效果
 .mo-navbar-Default li {
-  background: #cccccc;
+  background: $color-grey;
 }
 
 .mo-navbar-Default .mo-navbar-current {
-  background: $navbar-pills-hightlight;
+  background: $navbar-cur-color;
 }
 
 .mo-navbar-Default .mo-navbar-current a {
-  color: $navbar-pills-color
+  color: #ffffff;
 }

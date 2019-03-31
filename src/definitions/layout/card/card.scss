@@ -11,6 +11,7 @@ $card-width:600px;
   @include borderRadius;
   @include borderSolid;
   margin: $card-margin;
+  color: $color-font;
 }
 
 .mo-card-header {

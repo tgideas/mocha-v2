@@ -1,5 +1,7 @@
-$breadcrumb-color: #337ab7;
-$breadcrumb-active: #777777;
+@import "../../basic/css/comm";
+
+$breadcrumb-color: $color-default;
+$breadcrumb-active: $color-font-dark;
 
 .mo-breadcrumb li {
   display: block;
@@ -8,6 +10,7 @@ $breadcrumb-active: #777777;
 
 .mo-breadcrumb a {
   color: $breadcrumb-color;
+  text-decoration: none;
 }
 
 .mo-breadcrumb .active a {

@@ -138,69 +138,80 @@ select {
   *font-size: 100%;
 }
 
-.mo-navbar {
+.mo-layout-Left,
+.mo-layout-Right,
+.mo-layout {
   *zoom: 1;
 }
 
-.mo-navbar:before, .mo-navbar:after {
+.mo-layout-Left:before, .mo-layout-Left:after,
+.mo-layout-Right:before,
+.mo-layout-Right:after,
+.mo-layout:before,
+.mo-layout:after {
   content: "";
   display: block;
 }
 
-.mo-navbar:after {
+.mo-layout-Left:after,
+.mo-layout-Right:after,
+.mo-layout:after {
   clear: both;
   overflow: hidden;
 }
 
-.mo-navbar li {
+.mo-layout-Left .mo-sider {
+  position: relative;
   float: left;
-  display: block;
+  width: 200px;
+  margin-right: -200px;
 }
 
-.mo-navbar li a {
-  display: block;
-  line-height: 50px;
-  padding: 0 20px;
-  text-decoration: none;
+.mo-layout-Left .mo-content {
+  float: right;
+  width: 100%;
 }
 
-.mo-navbar li a:hover {
-  text-decoration: none;
+.mo-layout-Left .mo-content-inner {
+  margin-left: 215px;
 }
 
-.mo-navbar-Tabs li {
-  border-bottom: 3px solid transparent;
+.mo-layout-Right .mo-sider {
+  position: relative;
+  float: right;
+  width: 200px;
+  margin-left: -200px;
 }
 
-.mo-navbar-Tabs li a {
-  color: #595a5c;
+.mo-layout-Right .mo-content {
+  float: left;
+  width: 100%;
 }
 
-.mo-navbar-Tabs .mo-navbar-current {
-  border-bottom: 3px solid #337ab7;
+.mo-layout-Right .mo-content-inner {
+  margin-right: 215px;
 }
 
-.mo-navbar-Tabs .mo-navbar-current a {
-  color: #337ab7;
+.mo-layout .mo-sider-Left {
+  position: relative;
+  float: left;
+  width: 200px;
+  margin-right: -200px;
 }
 
-.mo-navbar-Pills .mo-navbar-current {
-  border-radius: 6px;
-  background: #337ab7;
+.mo-layout .mo-sider-Right {
+  position: relative;
+  float: right;
+  width: 200px;
+  margin-left: -200px;
 }
 
-.mo-navbar-Pills .mo-navbar-current a {
-  color: #ffffff;
+.mo-layout .mo-content {
+  float: left;
+  width: 100%;
 }
 
-.mo-navbar-Default li {
-  background: #cccccc;
-}
-
-.mo-navbar-Default .mo-navbar-current {
-  background: #337ab7;
-}
-
-.mo-navbar-Default .mo-navbar-current a {
-  color: #ffffff;
+.mo-layout .mo-content-inner {
+  margin-left: 215px;
+  margin-right: 215px;
 }

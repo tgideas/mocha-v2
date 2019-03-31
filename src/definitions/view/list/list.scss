@@ -1,24 +1,37 @@
+@import "../../basic/css/comm";
+
 //列表组基本配置
-$list-paddingtb: 10px;
-$list-paddinglr: 15px;
-$list-border-color: #cccccc;
-$list-radius: 4px;
+$list-paddingtb: $comm-padding-sm;
+$list-paddinglr: $comm-padding-md;
+$list-border-color: $color-default;
 
 .list-group-item {
   position: relative;
   padding: $list-paddingtb $list-paddinglr;
-  border: 1px solid $list-border-color;
+  @include borderSolid($color: $list-border-color);
   margin-bottom: -1px;
 }
 
+.list-group-item a,
+.list-group-item-Borderbottom a {
+  text-decoration: none;
+  color: $color-font;
+}
+
+.list-group-item a:hover,
+.list-group-item-Borderbottom a:hover {
+  text-decoration: none;
+  color: $color-font-light;
+}
+
 .list-group-item:first-child {
-  border-top-left-radius: $list-radius;
-  border-top-right-radius: $list-radius;
+  @include borderRadius($radius: 4px, $direction:top-left);
+  @include borderRadius($radius: 4px, $direction:top-right);
 }
 
 .list-group-item:last-child {
-  border-bottom-left-radius: $list-radius;
-  border-bottom-right-radius: $list-radius;
+  @include borderRadius($radius: 4px, $direction:bottom-left);
+  @include borderRadius($radius: 4px, $direction:bottom-right);
 }
 
 .list-group-item-Borderbottom {
@@ -31,8 +44,8 @@ $list-radius: 4px;
   border-bottom: none;
 }
 
-.list-group-item .badge,
-.list-group-item-Borderbottom .badge {
+.list-group-item .badge-tips,
+.list-group-item-Borderbottom .badge-tips {
   position: absolute;
   right: $list-paddinglr;
 }

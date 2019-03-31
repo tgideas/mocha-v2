@@ -1,0 +1,67 @@
+@import "../../basic/css/comm";
+
+//常用布局基本配置
+$layout-padding: $comm-padding-md;
+$layout-sider: 200px;
+
+.mo-layout-Left,
+.mo-layout-Right,
+.mo-layout {
+  @include clearfix;
+}
+
+.mo-layout-Left .mo-sider {
+  position: relative;
+  float: left;
+  width: $layout-sider;
+  margin-right: -$layout-sider;
+}
+
+.mo-layout-Left .mo-content {
+  float: right;
+  width: 100%;
+}
+
+.mo-layout-Left .mo-content-inner {
+  margin-left: $layout-padding + $layout-sider;
+}
+
+.mo-layout-Right .mo-sider {
+  position: relative;
+  float: right;
+  width: $layout-sider;
+  margin-left: -$layout-sider;
+}
+
+.mo-layout-Right .mo-content {
+  float: left;
+  width: 100%;
+}
+
+.mo-layout-Right .mo-content-inner {
+  margin-right: $layout-padding + $layout-sider;
+}
+
+.mo-layout .mo-sider-Left {
+  position: relative;
+  float: left;
+  width: $layout-sider;
+  margin-right: -$layout-sider;
+}
+
+.mo-layout .mo-sider-Right {
+  position: relative;
+  float: right;
+  width: $layout-sider;
+  margin-left: -$layout-sider;
+}
+
+.mo-layout .mo-content {
+  float: left;
+  width: 100%;
+}
+
+.mo-layout .mo-content-inner {
+  margin-left: $layout-padding+$layout-sider;
+  margin-right: $layout-padding+$layout-sider;
+}

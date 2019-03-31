@@ -25,6 +25,12 @@ $border-width:1px;
 }
 
 //radius
-@mixin borderRadius($radius: 2) {
-  border-radius: 2px;
+@mixin borderRadius($radius: 2px, $direction:all) {
+  @if $direction==all {
+    border-radius: $radius;
+  }
+
+  @else {
+    border-#{$direction}-radius: $radius;
+  }
 }

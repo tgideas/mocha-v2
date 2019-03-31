@@ -1,56 +1,106 @@
 @import "../../basic/css/comm";
 
 //按钮默认样式配置
-$btn-radius: 6px;
-$btn-border: 1px solid transparent;
-$btn-paddingtb: 6px;
-$btn-paddinglr: 12px;
-$btn-fontcolor:$comm-fontcolor;
+$btn-width:150px;
+$btn-height:50px;
+$btn-fontcolor:#ffffff;
+$btn-disable-fontcolor:#ffffff;
 
 .mo-btn {
   display: inline-block;
-  border: $btn-border;
-  border-radius: $btn-radius;
+  width: $btn-width;
+  height: $btn-height;
+  line-height: $btn-height;
+  @include borderSolid($width: 1px, $color:$color-default);
+  @include borderRadius($radius: 6px);
   cursor: pointer;
   text-decoration: none;
-  padding: $btn-paddingtb $btn-paddinglr;
+  text-align: center;
+  color: $btn-fontcolor;
+  font-size: $font-fontsize;
 }
 
-.mo-btn.mo-btn-Disable {
-  opacity: 0.65;
+.mo-btn:disabled {
+  color: $btn-disable-fontcolor;
   cursor: not-allowed;
 }
 
 .mo-btn-Default {
-  border-color: #cccccc;
+  border-color: $color-grey;
+  color: $color-font;
+}
+
+.mo-btn-Default:hover {
+  border-color: $color-default-lighter;
+  color: $color-default;
+}
+
+.mo-btn-Default:disabled {
+  border-color: $color-grey-light;
+  color: $color-font-light;
 }
 
 .mo-btn-Primary {
-  border-color: #2e6da4;
-  background-color: $comm-primary;
-  color: #fff;
+  border-color: $color-default-lighter;
+  background-color: $color-default;
+}
+
+.mo-btn-Primary:hover {
+  background-color: $color-default-light;
+}
+
+.mo-btn-Primary:disabled {
+  background-color: $color-default-light;
 }
 
 .mo-btn-Success {
-  border-color: #4cae4c;
-  background-color: $comm-success;
-  color: #fff;
+  border-color: $color-success-lighter;
+  background-color: $color-success;
+}
+
+.mo-btn-Success:hover {
+  background-color: $color-success-light;
+}
+
+.mo-btn-Success:disabled {
+  background-color: $color-success-light;
 }
 
 .mo-btn-Info {
-  border-color: #46b8da;
-  background-color: $comm-info;
-  color: #fff;
+  border-color: $color-info-lighter;
+  background-color: $color-info;
+}
+
+.mo-btn-Info:hover {
+  background-color: $color-info-light;
+}
+
+.mo-btn-Info:disabled {
+  background-color: $color-info-light;
 }
 
 .mo-btn-Warning {
-  border-color: #eea236;
-  background-color: $comm-warning;
-  color: #fff;
+  border-color: $color-warning-lighter;
+  background-color: $color-warning;
+}
+
+.mo-btn-Warning:hover {
+  background-color: $color-warning-light;
+}
+
+.mo-btn-Warning:disabled {
+  background-color: $color-warning-light;
 }
 
 .mo-btn-Danger {
-  border-color: #d43f3a;
-  background-color: $comm-danger;
-  color: #fff;
+  border-color: $color-danger-lighter;
+  background-color: $color-danger;
+}
+
+.mo-btn-Danger:hover {
+  background-color: $color-danger-light;
+}
+
+.mo-btn-Danger:disabled {
+  background-color: $color-danger-light;
 }

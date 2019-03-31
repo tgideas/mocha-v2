@@ -2,11 +2,12 @@
 
 //栅格默认样式配置
 $grid-padding:$comm-padding-sm;
-$grid-bgcolor:$color-grey-light;
+$grid-bgcolor:$color-default;
+$grid-border:$color-default-light;
 
 @mixin innerStyle {
   background-color: $grid-bgcolor;
-  @include borderSolid;
+  @include borderSolid($color: $grid-border);
   padding: $grid-padding;
 }
 

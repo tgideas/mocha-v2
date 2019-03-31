@@ -1,30 +1,15 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
-<head>
-  <meta charset="gbk">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="robots" content="all">
-  <meta name="Copyright" content="Tencent">
-  <meta name="Description" content="" />
-  <meta name="Keywords" content="" />
-  <link rel="stylesheet" href="../definitions/view/list/list.min.css">
-  <title></title>
-  <style>
-    .list-group {
-      width: 800px;
-      margin: 10px;
-    }
-
+<link rel="stylesheet" href="http://localhost:8080/src/definitions/view/list/list.min.css">
+<style>
     .badge-tips {
       color: #d9534f;
       font-weight: bold;
     }
   </style>
-</head>
+# 列表组
 
-<body>
-  <ul class="list-group">
+- 提供两种样式基础列表
+
+<ul class="list-group">
     <li class="list-group-item"><a href="">Weather for the Week Ahead<span class="badge-tips">H!</span></a></li>
     <li class="list-group-item"><a href="">Storm Gareth brings travel disruption</a></li>
     <li class="list-group-item"><a href="">Wind gusts weather symbol</a></li>
@@ -32,13 +17,9 @@
   </ul>
 
   <ul class="list-group">
-    <li class="list-group-item-Borderbottom"><a href="">Weather for the Week Ahead<span class="badge-tips">H!</span></a>
-    </li>
+    <li class="list-group-item-Borderbottom"><a href="">Weather for the Week Ahead<span class="badge-tips">H!</span></a></li>
     <li class="list-group-item-Borderbottom"><a href="">Storm Gareth brings travel disruption</a></li>
     <li class="list-group-item-Borderbottom"><a href="">Wind gusts weather symbol</a></li>
     <li class="list-group-item-Borderbottom"><a href="">Weather forecasts for thousands of locations around the
         world</a></li>
   </ul>
-</body>
-
-</html>
