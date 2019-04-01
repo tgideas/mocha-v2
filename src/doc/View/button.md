@@ -12,18 +12,48 @@
 <button class="mo-btn mo-btn-Default">Default</button>
 <button class="mo-btn mo-btn-Default" disabled>Default Disable</button>
 
+```
+<button class="mo-btn mo-btn-Default">Default</button>
+<button class="mo-btn mo-btn-Default" disabled>Default Disable</button>
+```
+
 按钮场景色
 <button class="mo-btn mo-btn-Primary">Primary</button>
 <button class="mo-btn mo-btn-Primary" disabled>Primary Disable</button>
+
+```
+<button class="mo-btn mo-btn-Primary">Primary</button>
+<button class="mo-btn mo-btn-Primary" disabled>Primary Disable</button>
+```
 <br>
 <button class="mo-btn mo-btn-Success">Success</button>
 <button class="mo-btn mo-btn-Success" disabled>Success Disable</button>
+
+```
+<button class="mo-btn mo-btn-Success">Success</button>
+<button class="mo-btn mo-btn-Success" disabled>Success Disable</button>
+```
 <br>
 <button class="mo-btn mo-btn-Info">Info</button>
 <button class="mo-btn mo-btn-Info" disabled>Info Disable</button>
+
+```
+<button class="mo-btn mo-btn-Info">Info</button>
+<button class="mo-btn mo-btn-Info" disabled>Info Disable</button>
+```
 <br>
 <button class="mo-btn mo-btn-Warning">Warning</button>
 <button class="mo-btn mo-btn-Warning" disabled>Warning Disable</button>
+
+```
+<button class="mo-btn mo-btn-Warning">Warning</button>
+<button class="mo-btn mo-btn-Warning" disabled>Warning Disable</button>
+```
 <br>
 <button class="mo-btn mo-btn-Danger">Danger</button>
 <button class="mo-btn mo-btn-Danger" disabled>Danger Disable</button>
+
+```
+<button class="mo-btn mo-btn-Danger">Danger</button>
+<button class="mo-btn mo-btn-Danger" disabled>Danger Disable</button>
+```

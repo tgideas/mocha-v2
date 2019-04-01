@@ -21,8 +21,4 @@
     * [其他视图元件](View/element.md)
 * 交互
     * [页卡切换](Interaction/tab.md)
-    * [弹出层](Interaction/pop.md)
-* 表单
-    * [输入框](Form/input.md)
-    * [选择框](Form/choice.md)
-
+    * [轮播](Interaction/slider.md)
