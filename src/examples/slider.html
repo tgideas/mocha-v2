@@ -19,6 +19,7 @@
     .mo-triangle-left,
     .mo-triangle-right {
       font-size: 30px;
+      color: #cccccc;
     }
 
     .mow-slider-panel {
@@ -78,16 +79,7 @@
     autoplay: 0,
     speed: 500,
     ease: 'linear'
-  }).on('afterchange', function (before, index) {
-
   })
-
-  document.getElementsByClassName('mo-slider-prev')[0].onclick = function () {
-    slider.prev()
-  }
-  document.getElementsByClassName('mo-slider-next')[0].onclick = function () {
-    slider.next()
-  }
 </script>
 
 </html>

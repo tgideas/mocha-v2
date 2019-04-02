@@ -1,15 +1,12 @@
-@import "../../basic/css/mixin";
+@import "../../basic/css/comm";
 
 //tab基本配置
 $tab-lineheight:40px;
-$tab-padding:20px;
+$tab-padding:$comm-padding-lg;
 
-$tab-tabs-hightlight: #337ab7;
-$tab-tab-color: #ffffff;
+$tab-hightlight: $color-default;
 
-$tab-pills-hightlight: #337ab7;
-$tab-pills-color: #ffffff;
-$tab-pills-raidus: 6px;
+$tab-grey:$color-grey;
 
 .mo-tab-ctrl {
   @include clearfix;
@@ -27,39 +24,44 @@ $tab-pills-raidus: 6px;
 
 //tabs效果
 .mo-tab-Tabs {
-  border-bottom: 3px solid #ddd;
+  @include borderSolid($width: 3px, $color: $tab-grey, $direction:bottom);
 }
 
 .mo-tab-Tabs li {
   margin-bottom: -3px;
-  border-bottom: 3px solid transparent;
+  color: $color-font;
+  @include borderSolid($width: 3px, $color: $tab-grey, $direction:bottom);
 }
 
 .mo-tab-Tabs .mo-tab-current {
-  border-bottom-color: $tab-tabs-hightlight;
-  color: $tab-tabs-hightlight;
+  @include borderSolid($width: 3px, $color: $tab-hightlight, $direction:bottom);
+  color: $tab-hightlight;
 }
 
 //pills效果
 .mo-tab-Pills .mo-tab-current {
-  border-radius: $tab-pills-raidus;
-  background: $tab-pills-hightlight;
-  color: $tab-pills-color;
+  @include borderRadius($radius: 6px);
+  background: $tab-hightlight;
+  color: #ffffff;
 }
 
 //默认效果
 .mo-tab-Default {
-  background: #cccccc;
+  background: $tab-grey;
+}
+
+.mo-tab-Default li {
+  color: $tab-hightlight;
 }
 
 .mo-tab-Default .mo-tab-current {
-  background: $tab-pills-hightlight;
-  color: $tab-pills-color;
+  background: $tab-hightlight;
+  color: #ffffff;
 }
 
 //content部分效果
 .mo-tab-content {
-  border: 1px solid #ddd;
+  @include borderSolid($width: 1px, $color: $tab-grey);
   border-top-color: transparent;
-  padding: 10px 15px;
+  padding: $tab-padding;
 }

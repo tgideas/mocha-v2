@@ -2,8 +2,8 @@
 
 //slider基本配置
 $slider-ctrlsize: 12px;
-$slider-ctrlcolor: #fff;
-$slider-ctrlactive: #000;
+$slider-ctrlcolor: $color-grey;
+$slider-ctrlactive: $color-grey-light;
 
 .mo-slider-container {
   position: relative;

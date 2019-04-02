@@ -1,0 +1,83 @@
+@import "../../basic/css/comm";
+
+//翻页基本配置
+$pages-padding:$comm-padding-md;
+$pages-padding-lg:$comm-padding-lg;
+$pages-padding-sm:$comm-padding-sm;
+
+$pages-border: $color-default;
+
+$pages-color: $color-font;
+$pages-highlight: $color-default;
+
+
+.mo-pages-Default {
+  @include clearfix;
+}
+
+.mo-pages-Default li {
+  display: inline-block;
+  @include pull-left;
+  margin: 0 $pages-padding;
+  @include borderRadius($radius: 4px);
+  @include borderSolid($width: 1px, $color:$pages-border);
+}
+
+.mo-pages-Default li a {
+  text-decoration: none;
+  line-height: $font-lineheight*1.5;
+  padding: 0 $pages-padding;
+  color: $pages-color;
+}
+
+.mo-pages-Default li:hover,
+.mo-pages li:hover {
+  background: $color-grey-light;
+}
+
+.mo-pages-Default li:hover a,
+.mo-pages li:hover a {
+  color: $pages-highlight;
+  text-decoration: none;
+}
+
+.mo-pages {
+  @include clearfix;
+}
+
+.mo-pages li {
+  display: inline-block;
+  @include pull-left;
+  margin-right: -1px;
+  @include borderSolid($width: 1px, $color: $pages-border);
+}
+
+.mo-pages li:first-child {
+  @include borderRadius($radius: 4px, $direction:top-left);
+  @include borderRadius($radius: 4px, $direction:bottom-left);
+}
+
+.mo-pages li:last-child {
+  @include borderRadius($radius: 4px, $direction:top-right);
+  @include borderRadius($radius: 4px, $direction:bottom-right);
+}
+
+.mo-pages li a {
+  line-height: $font-lineheight;
+  padding: 0 $pages-padding;
+  text-decoration: none;
+  color: $pages-color;
+}
+
+.mo-pages.mo-pages-Lg li a {
+  line-height: $font-lineheight*1.5;
+  padding: 0 $pages-padding-lg;
+}
+
+.mo-pages.mo-pages-Sm li a {
+  padding: 0 $pages-padding-sm;
+}
+
+.mo-pages .mo-pages-cur a {
+  color: $pages-highlight
+}
