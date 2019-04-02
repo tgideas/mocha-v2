@@ -41,6 +41,9 @@
 }
   </style>
 
+# 基础颜色
+
+## 预设基础颜色
 <ul class="colorlist">
 <li style="background-color:#337ab7">
 <p>主题色</p>
@@ -145,3 +148,17 @@
 <p>#e9e9e9</p>
 </li>
 </ul>
+
+## 预设颜色调用类
+<table>
+<tbody>
+<tr><td>颜色名称</td><td>类名</td><td>举例</td></tr>
+<tr><td>default</td><td>mo-color-default</td><td style="color: #337ab7;">.mo-color-default</td></tr>
+<tr><td>success</td><td>mo-color-success</td><td style="color: #5cb85c;">.mo-color-success</td></tr>
+<tr><td>info</td><td>mo-color-info</td><td style="color: #5bc0de;">.mo-color-info</td></tr>
+<tr><td>warning</td><td>mo-color-warning</td><td style="color: #f0ad4e;">.mo-color-warning</td></tr>
+<tr><td>danger</td><td>mo-color-danger</td><td style="color: #d9534f;">.mo-color-danger</td></tr>
+<tr><td>dark</td><td>mo-color-dark</td><td style="color: #595a5c;">.mo-color-dark</td></tr>
+<tr><td>grey</td><td>mo-color-grey</td><td style="color: #cccccc;">.mo-color-grey</td></tr>
+</tbody>
+</table>

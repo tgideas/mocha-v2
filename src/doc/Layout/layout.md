@@ -26,12 +26,15 @@
 ## 预设常用的几种基础布局
 
 - 左侧定宽，右侧自适应
+<div class="example-prev">
+        <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
 <div class="mo-layout-Left">
     <div class="mo-sider">左侧定宽</div>
     <div class="mo-content">
       <div class="mo-content-inner">右侧自适应</div>
     </div>
   </div>
+</div>
 
   ```html
 <div class="mo-layout-Left">
@@ -43,11 +46,14 @@
 ```
 
 - 右侧定宽，左侧自适应
+<div class="example-prev">
+        <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
 <div class="mo-layout-Right">
   <div class="mo-content">
     <div class="mo-content-inner">左侧自适应</div>
   </div>
   <div class="mo-sider">右侧定宽</div>
+</div>
 </div>
 
 ```html
@@ -60,12 +66,15 @@
 ```
 
 - 左右侧定宽，中间自适应
+<div class="example-prev">
+<a href="javascript:;" title="查看代码" class="example-prev-code"></a>
 <div class="mo-layout">
   <div class="mo-sider-Left">左侧定宽</div>
   <div class="mo-content">
     <div class="mo-content-inner">中间自适应</div>
   </div>
   <div class="mo-sider-Right">右侧自适应</div>
+</div>
 </div>
 
 ```html

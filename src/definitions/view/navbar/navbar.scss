@@ -11,11 +11,6 @@ $navbar-cur-color: $color-default;
   @include clearfix;
 }
 
-.mo-navbar li {
-  @include pull-left;
-  display: block;
-}
-
 .mo-navbar li a {
   display: block;
   line-height: $navbar-lineheight;
@@ -29,6 +24,8 @@ $navbar-cur-color: $color-default;
 
 //tabs效果
 .mo-navbar-Tabs li {
+  @include pull-left;
+  display: block;
   @include borderSolid($width: 3px, $color: transparent, $direction:bottom);
 }
 
@@ -46,6 +43,8 @@ $navbar-cur-color: $color-default;
 
 //pills效果
 .mo-navbar-Pills .mo-navbar-current {
+  @include pull-left;
+  display: block;
   @include borderRadius($radius: 6px);
   background: $navbar-cur-color;
 }
@@ -55,8 +54,24 @@ $navbar-cur-color: $color-default;
 }
 
 
+//垂直效果
+.mo-navbar-Vertical li {
+  background: $color-grey;
+}
+
+.mo-navbar-Vertical .mo-navbar-current {
+  background: $navbar-cur-color;
+}
+
+.mo-navbar-Vertical .mo-navbar-current a {
+  color: #ffffff;
+}
+
+
 //默认效果
 .mo-navbar-Default li {
+  @include pull-left;
+  display: block;
   background: $color-grey;
 }
 

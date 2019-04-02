@@ -1,7 +1,7 @@
 @import 'color';
 
 // border
-$border-color:$color-grey-light;
+$border-color:$color-grey;
 $border-width:1px;
 
 @mixin borderDashed($width: $border-width, $color:$border-color, $direction:all) {
@@ -33,4 +33,89 @@ $border-width:1px;
   @else {
     border-#{$direction}-radius: $radius;
   }
+}
+
+// 全边框
+.mo-border {
+  @include borderSolid($width: $border-width, $color:$border-color);
+}
+
+.mo-border-dashed {
+  @include borderDashed($width: $border-width, $color:$border-color);
+}
+
+// 上边框
+.mo-border-top {
+  @include borderSolid($width: $border-width, $color:$border-color, $direction:top);
+}
+
+.mo-border-dashed-top {
+  @include borderDashed($width: $border-width, $color:$border-color, $direction:top);
+}
+
+.mo-border-top-0 {
+  @include borderSolid($width: $border-width, $color:$border-color);
+  border-top: none;
+}
+
+.mo-border-dashed-top-0 {
+  @include borderDashed($width: $border-width, $color:$border-color);
+  border-top: none;
+}
+
+// 右边框
+.mo-border-right {
+  @include borderSolid($width: $border-width, $color:$border-color, $direction:right);
+}
+
+.mo-border-dashed-right {
+  @include borderDashed($width: $border-width, $color:$border-color, $direction:right);
+}
+
+.mo-border-right-0 {
+  @include borderSolid($width: $border-width, $color:$border-color);
+  border-right: none;
+}
+
+.mo-border-dashed-right-0 {
+  @include borderDashed($width: $border-width, $color:$border-color);
+  border-right: none;
+}
+
+// 下边框
+.mo-border-bottom {
+  @include borderSolid($width: $border-width, $color:$border-color, $direction:bottom);
+}
+
+.mo-border-dashed-bottom {
+  @include borderDashed($width: $border-width, $color:$border-color, $direction:bottom);
+}
+
+.mo-border-bottom-0 {
+  @include borderSolid($width: $border-width, $color:$border-color);
+  border-bottom: none;
+}
+
+.mo-border-dashed-bottom-0 {
+  @include borderDashed($width: $border-width, $color:$border-color);
+  border-bottom: none;
+}
+
+// 左边框
+.mo-border-left {
+  @include borderSolid($width: $border-width, $color:$border-color, $direction:left);
+}
+
+.mo-border-dashed-left {
+  @include borderDashed($width: $border-width, $color:$border-color, $direction:left);
+}
+
+.mo-border-left-0 {
+  @include borderSolid($width: $border-width, $color:$border-color);
+  border-left: none;
+}
+
+.mo-border-dashed-left-0 {
+  @include borderDashed($width: $border-width, $color:$border-color);
+  border-left: none;
 }

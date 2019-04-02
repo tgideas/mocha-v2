@@ -47,6 +47,7 @@ $grid-border:$color-default-light;
 }
 
 .mo-inner {
+  @include clearfix;
   @include innerStyle;
 }
 
