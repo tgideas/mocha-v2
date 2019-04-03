@@ -4,7 +4,7 @@
 * 安装
     * [直接引入](Install/script.md)
 * 基础内容
-    * [命名规范](Basic/naming.md)
+    * [基础规范](Basic/naming.md)
     * [字体字号](Basic/font.md)
     * [基础颜色](Basic/color.md)
     * [样式特效](Basic/mixin.md)

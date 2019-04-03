@@ -3,7 +3,7 @@
 //列表组基本配置
 $list-paddingtb: $comm-padding-sm;
 $list-paddinglr: $comm-padding-md;
-$list-border-color: $color-default;
+$list-border-color: $color-grey;
 
 .list-group-item {
   position: relative;
@@ -44,10 +44,16 @@ $list-border-color: $color-default;
   border-bottom: none;
 }
 
-.list-group-item .badge-tips,
-.list-group-item-Borderbottom .badge-tips {
+.list-group-item .badge-tips-right,
+.list-group-item-Borderbottom .badge-tips-right {
   position: absolute;
   right: $list-paddinglr;
+}
+
+.list-group-item .badge-tips-left,
+.list-group-item-Borderbottom .badge-tips-left {
+  position: absolute;
+  left: $list-paddinglr;
 }
 
 .list-group-item a,
