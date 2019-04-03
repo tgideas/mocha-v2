@@ -7,7 +7,7 @@
 
 ## 提供三种基础导航的样式
 
-- 默认导航
+### 默认导航
 <div class="example-prev">
         <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
 <ul class="mo-navbar mo-navbar-Tabs">
@@ -36,6 +36,8 @@
     </li>
   </ul>
   ```
+
+### 样式一
 <div class="example-prev">
         <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
   <ul class="mo-navbar mo-navbar-Pills">
@@ -64,6 +66,8 @@
     </li>
   </ul>
   ```
+
+### 样式二
 <div class="example-prev">
         <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
   <ul class="mo-navbar mo-navbar-Default">
@@ -122,7 +126,7 @@
   </ul>
   ```
 
-  ## 提供面包屑导航
+### 提供面包屑导航
 <div class="example-prev">
 <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
 <ul class="mo-breadcrumb">
@@ -130,7 +134,7 @@
     <li><a href="#">List</a></li>
     <li class="active"><a href="#">Page</a></li>
   </ul>
-  </div>
+</div>
 
 ```html
 <ul class="mo-breadcrumb">

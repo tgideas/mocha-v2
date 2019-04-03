@@ -7,7 +7,8 @@
   </style>
 # 列表组
 
-- 提供两种样式基础列表
+## 提供两种样式基础列表
+### 样式一
 <div class="example-prev">
         <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
 <ul class="list-group">
@@ -19,7 +20,7 @@
   </ul>
   </div>
 
-  ```
+  ```html
   <ul class="list-group">
     <li class="list-group-item"><a href=""><span class="badge-tips-left">[tips]</span>Weather for the Week Ahead<span
           class="badge-tips-right">2019-01-01</span></a></li>
@@ -29,6 +30,7 @@
   </ul>
   ```
 
+### 样式二
 <div class="example-prev">
         <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
   <ul class="list-group">
@@ -41,7 +43,7 @@
   </ul>
   </div>
 
-  ```
+  ```html
   <ul class="list-group">
     <li class="list-group-item-Borderbottom"><a href=""><span class="badge-tips-left">[tips]</span>Weather for the Week Ahead<span
           class="badge-tips-right">2019-01-01</span></a></li>
