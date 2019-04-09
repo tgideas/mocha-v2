@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="gbk">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="robots" content="all">
   <meta name="Copyright" content="Tencent">
@@ -53,7 +53,8 @@
 </head>
 
 <body>
-  <div id="#slider" class="mow-slider-container mo-slider-container">
+  <h3 style="text-align:center;margin-top:2em;">Slider + 分页 + 左右</h3>
+  <div id="slider" class="mow-slider-container mo-slider-container">
     <div class="mow-slider-wrapper mo-slider-wrapper">
       <div class="mow-slider-panel mo-slider-panel">1</div>
       <div class="mow-slider-panel mo-slider-panel">2</div>
@@ -67,10 +68,101 @@
       <li class="mo-slider-cur"></li>
       <li></li>
       <li></li>
+      <li></li>
+      <li></li>
     </ol>
   </div>
+
+  <h3 style="text-align:center;margin-top:2em;">Slider + 左右</h3>
+  <div id="slider2" class="mow-slider-container mo-slider-container">
+    <div class="mow-slider-wrapper mo-slider-wrapper">
+      <div class="mow-slider-panel mo-slider-panel">1</div>
+      <div class="mow-slider-panel mo-slider-panel">2</div>
+      <div class="mow-slider-panel mo-slider-panel">3</div>
+      <div class="mow-slider-panel mo-slider-panel">4</div>
+      <div class="mow-slider-panel mo-slider-panel">5</div>
+    </div>
+    <div class="mo-slider-prev"><span class="mo-triangle-left"></span></div>
+    <div class="mo-slider-next"><span class="mo-triangle-right"></span></div>
+  </div>
+
+  <h3 style="text-align:center;margin-top:2em;">Slider + 分页</h3>
+  <div id="slider3" class="mow-slider-container mo-slider-container">
+    <div class="mow-slider-wrapper mo-slider-wrapper">
+      <div class="mow-slider-panel mo-slider-panel">1</div>
+      <div class="mow-slider-panel mo-slider-panel">2</div>
+      <div class="mow-slider-panel mo-slider-panel">3</div>
+      <div class="mow-slider-panel mo-slider-panel">4</div>
+      <div class="mow-slider-panel mo-slider-panel">5</div>
+    </div>
+    <ol class="mo-slider-ctrl">
+      <li class="mo-slider-cur"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
+
+  <h3 style="text-align:center;margin-top:2em;">单Slider</h3>
+  <div id="slider4" class="mow-slider-container mo-slider-container">
+    <div class="mow-slider-wrapper mo-slider-wrapper">
+      <div class="mow-slider-panel mo-slider-panel">1</div>
+      <div class="mow-slider-panel mo-slider-panel">2</div>
+      <div class="mow-slider-panel mo-slider-panel">3</div>
+      <div class="mow-slider-panel mo-slider-panel">4</div>
+      <div class="mow-slider-panel mo-slider-panel">5</div>
+    </div>
+  </div>
+
 </body>
-<script src="mow.js"></script>
+<script src="../definitions/basic/js/mocha.js"></script>
+<script>
+  // Slider + 分页 + 左右
+  // moConfig默认配置(不自动播放)
+  mo.slider({selector: "#slider"});
+  
+  // Slider + 左右
+  // moConfig自定义配置
+  mo.slider({selector: "#slider2",
+    moConfig:{
+      index: 0,
+      effect: 'fade',
+      direction: 'y',
+      autoplay: 3000,
+      speed: 500,
+      ease: 'linear'
+    }
+  });
+
+  // Slider + 分页
+  // moConfig自定义配置
+  mo.slider({selector: "#slider3",
+    moConfig:{
+      index: 0,
+      effect: 'fade',
+      direction: 'y',
+      autoplay: 5000,
+      speed: 500,
+      ease: 'linear'
+    }
+  });
+
+  // 单Slider
+  // moConfig自定义配置
+  mo.slider({selector: "#slider4",
+    moConfig:{
+      index: 0,
+      effect: 'fade',
+      direction: 'y',
+      autoplay: 2000,
+      speed: 500,
+      ease: 'linear'
+    }
+  });
+</script>
+
+<!-- <script src="mow.js"></script>
 <script>
   slider = mow.swiper('#slider', {
     index: 0,
@@ -80,6 +172,6 @@
     speed: 500,
     ease: 'linear'
   })
-</script>
+</script> -->
 
 </html>
