@@ -62,22 +62,27 @@ var mo = (function () {
             }
             if(moNav){
                 var moNavLi = moNav.getElementsByTagName("li");
+                var moNavLiii = Array.prototype.slice.call(moNavLi);
                 for (var i = 0; i < moNavLi.length; i++){
                         moNavLi[i].addEventListener('click', function (n) {
                             return function () {
                                 slider.to(n);                                
-                                var xx = Array.prototype.slice.call(moNavLi);
-                                xx.forEach(function (e) { e.className = '' });
+                                moNavLiii.forEach(function (e) { e.className = '' });
                                 moNavLi[n].className = 'mo-slider-cur';
                             }
                         }(i), false);
                 }
+                // update slider cur index
+                slider.on("afterchange", function (toIndex,beforeIndex) {
+                    moNavLiii.forEach(function (e) { e.className = '' });
+                    moNavLi[beforeIndex].className = 'mo-slider-cur';
+                })
             }
         }
         (typeof mow !== "object") ? fn.jsLoader(componentJS, function(){init()}) : init()        
     }
     
-    
+
     return {
         slider : function (p) {
             util.slider(p)
