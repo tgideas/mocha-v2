@@ -19,6 +19,3 @@
     * [按钮](View/button.md)
     * [列表组](View/list.md)
     * [其他视图元件](View/element.md)
-* 交互
-    * [页卡切换](Interaction/tab.md)
-    * [轮播](Interaction/slider.md)

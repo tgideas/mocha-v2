@@ -3,7 +3,7 @@
 - 提供基本的卡片布局，包括可选的卡片头部和尾部
 - 卡片布局包含基础的 7 中情境颜色：default、primary、success、info、warning、danger
 
-<link rel="stylesheet" href="http://localhost:8080/src/definitions/layout/card/card.min.css">
+<link rel="stylesheet" href="http://10.32.87.35:8080/src/definitions/layout/card/card.min.css">
 
 ## 基础的卡片用法
 <div class="example-prev">

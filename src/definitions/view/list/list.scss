@@ -52,8 +52,7 @@ $list-border-color: $color-grey;
 
 .list-group-item .badge-tips-left,
 .list-group-item-Borderbottom .badge-tips-left {
-  position: absolute;
-  left: $list-paddinglr;
+  margin-right: $list-paddinglr/2;
 }
 
 .list-group-item a,

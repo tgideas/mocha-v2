@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://localhost:8080/src/definitions/view/list/list.min.css">
+<link rel="stylesheet" href="http://10.32.87.35:8080/src/definitions/view/list/list.min.css">
 <style>
     .badge-tips {
       color: #d9534f;
