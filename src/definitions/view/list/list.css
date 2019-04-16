@@ -372,8 +372,7 @@ p,
 
 .list-group-item .badge-tips-left,
 .list-group-item-Borderbottom .badge-tips-left {
-  position: absolute;
-  left: 15px;
+  margin-right: 7.5px;
 }
 
 .list-group-item a,

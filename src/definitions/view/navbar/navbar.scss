@@ -42,9 +42,12 @@ $navbar-cur-color: $color-default;
 }
 
 //pills效果
-.mo-navbar-Pills .mo-navbar-current {
+.mo-navbar-Pills li {
   @include pull-left;
   display: block;
+}
+
+.mo-navbar-Pills .mo-navbar-current {
   @include borderRadius($radius: 6px);
   background: $navbar-cur-color;
 }

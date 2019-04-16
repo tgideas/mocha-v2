@@ -368,9 +368,12 @@ p,
   color: #337ab7;
 }
 
-.mo-navbar-Pills .mo-navbar-current {
+.mo-navbar-Pills li {
   float: left;
   display: block;
+}
+
+.mo-navbar-Pills .mo-navbar-current {
   border-radius: 6px;
   background: #337ab7;
 }
