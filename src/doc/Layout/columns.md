@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://localhost:8080/src/definitions/layout/grid/grid.min.css">
+<link rel="stylesheet" href="http://10.32.87.35:8080/src/definitions/layout/grid/grid.min.css">
 <style>
     .mo-wrapper {color: #fff;}
   .mo-inner{text-align:center;font-size:12px;}
@@ -7,7 +7,7 @@
 # 栅格系统
 
 - 提供基础12列栅格布局
-- 栅格通过浮动来实现(外层div以作清除浮动处理)
+- 栅格通过浮动来实现(外层div已作清除浮动处理)
 - 支持栅格嵌套
 <div class="example-prev">
         <a href="javascript:;" title="查看代码" class="example-prev-code"></a>

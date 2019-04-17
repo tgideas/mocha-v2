@@ -2,7 +2,7 @@
 
 
 ## 翻页
-<link rel="stylesheet" href="http://localhost:8080/src/definitions/view/other/pages.min.css">
+<link rel="stylesheet" href="http://10.32.87.35:8080/src/definitions/view/other/pages.min.css">
 
 ### 提供三种尺寸翻页布局
 <div class="example-prev">
