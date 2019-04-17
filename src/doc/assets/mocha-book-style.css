@@ -145,7 +145,7 @@
     top: 0;
     width: 419px;
     height: 800px;
-    background: url(/assets/iframe_iphonex.png) no-repeat;
+    background: url(iframe_iphonex.png) no-repeat;
     -moz-background-size: contain;
     background-size: contain;
     pointer-events: none;
