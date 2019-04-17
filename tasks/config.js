@@ -7,7 +7,7 @@ module.exports = {
         clean : ['dist/components/**','!dist/components','!dist/components/README.md'],
         css:{
             src: 'src/definitions/**/*.scss',
-            dist: 'dist/componsents/test/'
+            dist: 'dist/components/test/'
         }
     }
 };
