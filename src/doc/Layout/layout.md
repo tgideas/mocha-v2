@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/layout/layout/layout.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/pc/layout/layout/layout.min.css">
 <style>
     .mo-layout-Left,
     .mo-layout-Right,

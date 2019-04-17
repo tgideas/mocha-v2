@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/view/list/list.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/pc/view/list/list.min.css">
 <style>
     .badge-tips {
       color: #d9534f;

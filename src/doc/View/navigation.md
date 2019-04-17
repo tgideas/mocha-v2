@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/view/navbar/navbar.min.css">
-<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/view/navbar/breadcrumb.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/pc/view/navbar/navbar.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/pc/view/navbar/breadcrumb.min.css">
 <style>
   .mo-navbar-Vertical{width:200px; text-align:center;}
   </style>

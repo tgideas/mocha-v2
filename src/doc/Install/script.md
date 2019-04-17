@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://localhost:8080/src/definitions/layout/card/card.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/pc/layout/card/card.min.css">
 ## 代码折叠例子
 <div class="example-prev">
         <a href="javascript:;" title="查看代码" class="example-prev-code"></a>

@@ -3,7 +3,7 @@
 - 具有按钮常态、高亮态、禁用态三种效果
 - 包含基础的 7 中情境颜色：default、primary、success、info、warning、danger
 
-<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/view/button/button.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/pc/view/button/button.min.css">
 <style>
   button{margin:10px 0;}
 </style>

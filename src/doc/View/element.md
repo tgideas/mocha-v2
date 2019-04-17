@@ -2,7 +2,7 @@
 
 
 ## 翻页
-<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/view/other/pages.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/pc/view/other/pages.min.css">
 
 ### 提供三种尺寸翻页布局
 <div class="example-prev">

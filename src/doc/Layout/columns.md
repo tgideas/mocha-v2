@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/layout/grid/grid.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/pc/layout/grid/grid.min.css">
 <style>
     .mo-wrapper {color: #fff;}
   .mo-inner{text-align:center;font-size:12px;}
