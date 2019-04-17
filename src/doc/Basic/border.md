@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://10.32.87.35:8080/src/definitions/basic/css/border.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/basic/css/border.min.css">
 
 # 其他基础内容
 

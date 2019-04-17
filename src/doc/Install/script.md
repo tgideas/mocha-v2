@@ -1,12 +1,4 @@
 <link rel="stylesheet" href="http://localhost:8080/src/definitions/layout/card/card.min.css">
-# TODO List
-- [!]解决代码的折叠收起
-- [!]增加效果的预览（双端浏览）
-- [x]解决外部html/css 文件的引入显示成代码
-- [x]去掉页头右侧链接及分享
-- [x]增加代码的复制按钮
-- [x]增加边栏当前文章章节锚点
-
 ## 代码折叠例子
 <div class="example-prev">
         <a href="javascript:;" title="查看代码" class="example-prev-code"></a>

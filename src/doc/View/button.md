@@ -3,14 +3,14 @@
 - 具有按钮常态、高亮态、禁用态三种效果
 - 包含基础的 7 中情境颜色：default、primary、success、info、warning、danger
 
-<link rel="stylesheet" href="http://10.32.87.35:8080/src/definitions/view/button/button.min.css">
+<link rel="stylesheet" href="http://mocha.oa.com/v2/definitions/view/button/button.min.css">
 <style>
   button{margin:10px 0;}
 </style>
 
 ## 默认按钮
 <div class="example-prev">
-        <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
+    <a href="javascript:;" title="查看代码" class="example-prev-code"></a>
 <button class="mo-btn mo-btn-Default">Default</button>
 <button class="mo-btn mo-btn-Default" disabled>Default Disable</button>
 </div>
