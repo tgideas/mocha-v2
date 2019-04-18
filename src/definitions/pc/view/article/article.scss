@@ -6,27 +6,27 @@
 }
 
 .mo-article-title {
-  font-size: $comm-titlesize;
+  font-size: $font-titlesize;
   text-align: center;
 }
 
 .mo-article-subtitle {
-  font-size: $comm-smallsize;
+  font-size: $font-smallsize;
   text-align: center;
 }
 
 .mo-article-time {
-  font-size: $comm-smallsize;
+  font-size: $font-smallsize;
   text-align: center;
 }
 
 .mo-article-content {
-  font-size: $comm-fontsize;
-  line-height: $comm-lineheight;
+  font-size: $font-fontsize;
+  line-height: $font-lineheight;
 }
 
 .mo-article-content p {
-  margin: $comm-margin 0;
+  margin: $comm-padding-md 0;
 }
 
 .mo-article-content img {
