@@ -7,7 +7,8 @@ module.exports = {
         clean : ['dist/components/**','!dist/components','!dist/components/README.md'],
         css:{
             src: 'src/definitions/**/*.scss',
-            dist: 'dist/components/test/'
+            dist: 'dist/components/',
+            mochaMin: 'mocha.min.css'
         }
     }
 };

@@ -8,9 +8,13 @@
   },
   "dependencies": {
     "del": "^4.1.0",
+    "event-stream": "^4.0.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-purge": "^3.0.9",
     "gulp-help": "^1.6.1",
     "gulp-if": "^2.0.2",
     "gulp-rename": "^1.4.0",
