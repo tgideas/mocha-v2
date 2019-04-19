@@ -1,0 +1,71 @@
+//字体
+$font-fontfamily:Helvetica,
+Tahoma,
+Arial,
+"PingFang SC",
+STXihei,
+"Microsoft yahei",
+"WenQuanYi Micro Hei",
+sans-serif;
+
+//字号
+$font-titlesize:.26rem;
+$font-subsize:.22rem;
+$font-decssize:.20rem;
+$font-fontsize:.16rem;
+$font-smallsize: .12rem;
+
+//行高
+$font-lineheight:1.6;
+
+
+body {
+  font-family: $font-fontfamily;
+}
+
+.mo-article-title {
+  font-size: $font-titlesize;
+}
+
+.mo-article-subtitle {
+  font-size: $font-subsize;
+}
+
+h3,
+.mo-article-time {
+  font-size: $font-decssize;
+}
+
+h1 {
+  font-size: .26rem;
+}
+
+h2 {
+  font-size: .22rem;
+}
+
+h3 {
+  font-size: .20rem;
+}
+
+h4 {
+  font-size: .16rem;
+}
+
+h5 {
+  font-size: .14rem;
+}
+
+h6 {
+  font-size: .12rem;
+}
+
+p,
+.mo-article-content {
+  font-size: $font-fontsize;
+  line-height: $font-lineheight;
+}
+
+.mo-font-small {
+  font-size: $font-smallsize;
+}

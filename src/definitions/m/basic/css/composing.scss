@@ -1,0 +1,34 @@
+@import 'font.scss';
+@import '../../../comm/basic/css/color.scss';
+
+body {
+  font-family: $font-fontfamily;
+  font-size: $font-fontsize;
+  color: $color-font;
+}
+
+a {
+  text-decoration: none;
+  color: $color-font-dark;
+}
+
+h1 {
+  font-size: $font-titlesize;
+}
+
+h2 {
+  font-size: $font-subsize;
+}
+
+h3 {
+  font-size: $font-decssize;
+}
+
+h4,
+p {
+  font-size: $font-fontsize;
+}
+
+.mo-small-font {
+  font-size: $font-smallsize;
+}
