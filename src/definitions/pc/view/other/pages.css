@@ -142,12 +142,10 @@ body {
   font-family: Helvetica, Tahoma, Arial, "PingFang SC", STXihei, "Microsoft yahei", "WenQuanYi Micro Hei", sans-serif;
 }
 
-h1,
 .mo-article-title {
   font-size: 26px;
 }
 
-h2,
 .mo-article-subtitle {
   font-size: 22px;
 }
@@ -155,6 +153,30 @@ h2,
 h3,
 .mo-article-time {
   font-size: 20px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
 }
 
 p,
@@ -165,6 +187,142 @@ p,
 
 .mo-font-small {
   font-size: 12px;
+}
+
+.mo-color-default {
+  color: #337ab7;
+}
+
+.mo-color-success {
+  color: #5cb85c;
+}
+
+.mo-color-info {
+  color: #5bc0de;
+}
+
+.mo-color-warning {
+  color: #f0ad4e;
+}
+
+.mo-color-danger {
+  color: #d9534f;
+}
+
+.mo-color-dark {
+  color: #595a5c;
+}
+
+.mo-color-grey {
+  color: #cccccc;
+}
+
+.mo-border {
+  border: 1px solid #cccccc;
+}
+
+.mo-border-dashed {
+  border: 1px dashed #cccccc;
+}
+
+.mo-border-top {
+  border-top: 1px solid #cccccc;
+}
+
+.mo-border-dashed-top {
+  border-top: 1px dashed #cccccc;
+}
+
+.mo-border-top-0 {
+  border: 1px solid #cccccc;
+  border-top: none;
+}
+
+.mo-border-dashed-top-0 {
+  border: 1px dashed #cccccc;
+  border-top: none;
+}
+
+.mo-border-right {
+  border-right: 1px solid #cccccc;
+}
+
+.mo-border-dashed-right {
+  border-right: 1px dashed #cccccc;
+}
+
+.mo-border-right-0 {
+  border: 1px solid #cccccc;
+  border-right: none;
+}
+
+.mo-border-dashed-right-0 {
+  border: 1px dashed #cccccc;
+  border-right: none;
+}
+
+.mo-border-bottom {
+  border-bottom: 1px solid #cccccc;
+}
+
+.mo-border-dashed-bottom {
+  border-bottom: 1px dashed #cccccc;
+}
+
+.mo-border-bottom-0 {
+  border: 1px solid #cccccc;
+  border-bottom: none;
+}
+
+.mo-border-dashed-bottom-0 {
+  border: 1px dashed #cccccc;
+  border-bottom: none;
+}
+
+.mo-border-left {
+  border-left: 1px solid #cccccc;
+}
+
+.mo-border-dashed-left {
+  border-left: 1px dashed #cccccc;
+}
+
+.mo-border-left-0 {
+  border: 1px solid #cccccc;
+  border-left: none;
+}
+
+.mo-border-dashed-left-0 {
+  border: 1px dashed #cccccc;
+  border-left: none;
+}
+
+.mo-color-default {
+  color: #337ab7;
+}
+
+.mo-color-success {
+  color: #5cb85c;
+}
+
+.mo-color-info {
+  color: #5bc0de;
+}
+
+.mo-color-warning {
+  color: #f0ad4e;
+}
+
+.mo-color-danger {
+  color: #d9534f;
+}
+
+.mo-color-dark {
+  color: #595a5c;
+}
+
+.mo-color-grey {
+  color: #cccccc;
 }
 
 .mo-pages-Default {

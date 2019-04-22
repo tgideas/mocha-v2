@@ -143,50 +143,50 @@ body {
 }
 
 .mo-article-title {
-  font-size: 26px;
+  font-size: 0.26rem;
 }
 
 .mo-article-subtitle {
-  font-size: 22px;
+  font-size: 0.22rem;
 }
 
 h3,
 .mo-article-time {
-  font-size: 20px;
+  font-size: 0.2rem;
 }
 
 h1 {
-  font-size: 26px;
+  font-size: .26rem;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: .22rem;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: .20rem;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: .16rem;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: .14rem;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: .12rem;
 }
 
 p,
 .mo-article-content {
-  font-size: 16px;
+  font-size: 0.16rem;
   line-height: 1.6;
 }
 
 .mo-font-small {
-  font-size: 12px;
+  font-size: 0.12rem;
 }
 
 .mo-color-default {
@@ -323,23 +323,4 @@ p,
 
 .mo-color-grey {
   color: #cccccc;
-}
-
-.mo-breadcrumb li {
-  display: block;
-  float: left;
-}
-
-.mo-breadcrumb a {
-  color: #337ab7;
-  text-decoration: none;
-}
-
-.mo-breadcrumb .active a {
-  color: #303133;
-}
-
-.mo-breadcrumb > li + li:before {
-  content: "/";
-  padding: 5px;
 }

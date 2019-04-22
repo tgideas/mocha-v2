@@ -324,22 +324,3 @@ p,
 .mo-color-grey {
   color: #cccccc;
 }
-
-.mo-breadcrumb li {
-  display: block;
-  float: left;
-}
-
-.mo-breadcrumb a {
-  color: #337ab7;
-  text-decoration: none;
-}
-
-.mo-breadcrumb .active a {
-  color: #303133;
-}
-
-.mo-breadcrumb > li + li:before {
-  content: "/";
-  padding: 5px;
-}
