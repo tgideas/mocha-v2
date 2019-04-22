@@ -22,16 +22,7 @@ var mo = (function () {
                 }
             };
             head.insertBefore(script, head.firstChild);
-        },
-
-        addClass : function (className) {
-            if (!className) return this
-            let classes = className.split(' ')
-            return this.each((index, item) => {
-              item.classList.add.apply(item.classList, classes)
-            })
         }
-
     };
     
     /* 
