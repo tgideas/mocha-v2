@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="robots" content="all">
+  <meta name="Copyright" content="Tencent">
+  <meta name="Description" content="" />
+  <meta name="Keywords" content="" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+  <link rel="stylesheet" href="//mocha.oa.com/definitions/m/view/button/button.min.css">
+  <title></title>
+  <style>
+    .mo-btn {
+      margin: .1rem;
+    }
+  </style>
+</head>
+<script>
+  (function (win, doc) {
+    if (!win.addEventListener) return;
+    var html = document.documentElement;
+
+    function setFont() {
+      var cliWidth = html.clientWidth;
+      html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+    }
+    win.addEventListener('resize', setFont, false);
+    setFont();
+  })(window, document);
+</script>
+
+<body>
+  <button class="mo-btn mo-btn-Default">Default</button>
+  <button class="mo-btn mo-btn-Default" disabled>Disable</button>
+  <button class="mo-btn mo-btn-Primary">Primary</button>
+  <button class="mo-btn mo-btn-Primary" disabled>Disable</button>
+  <button class="mo-btn mo-btn-Success">Success</button>
+  <button class="mo-btn mo-btn-Success" disabled>Disable</button>
+  <button class="mo-btn mo-btn-Info">Info</button>
+  <button class="mo-btn mo-btn-Info" disabled>Disable</button>
+  <button class="mo-btn mo-btn-Warning">Warning</button>
+  <button class="mo-btn mo-btn-Warning" disabled>Disable</button>
+  <button class="mo-btn mo-btn-Danger">Danger</button>
+  <button class="mo-btn mo-btn-Danger" disabled>Disable</button>
+</body>
+
+</html>

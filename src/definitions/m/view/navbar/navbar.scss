@@ -1,0 +1,87 @@
+@import "../../basic/css/mcomm.scss";
+
+//导航默认样式配置
+$navbar-lineheight:.5rem;
+$navbar-padding:$comm-padding-lg;
+$navbar-margin:$comm-margin-lg;
+
+$navbar-cur-color: $color-default;
+
+.mo-navbar {
+  @include clearfix;
+}
+
+.mo-navbar li a {
+  display: block;
+  line-height: $navbar-lineheight;
+  padding: 0 $navbar-padding;
+  text-decoration: none;
+}
+
+.mo-navbar li a:hover {
+  text-decoration: none;
+}
+
+//tabs效果
+.mo-navbar-Tabs li {
+  @include pull-left;
+  display: block;
+  @include borderSolid($width: .03rem, $color: transparent, $direction:bottom);
+}
+
+.mo-navbar-Tabs li a {
+  color: $color-font;
+}
+
+.mo-navbar-Tabs .mo-navbar-current {
+  @include borderSolid($width: .03rem, $color: $navbar-cur-color, $direction:bottom);
+}
+
+.mo-navbar-Tabs .mo-navbar-current a {
+  color: $navbar-cur-color;
+}
+
+//pills效果
+.mo-navbar-Pills li {
+  @include pull-left;
+  display: block;
+}
+
+.mo-navbar-Pills .mo-navbar-current {
+  @include borderRadius($radius: .06rem);
+  background: $navbar-cur-color;
+}
+
+.mo-navbar-Pills .mo-navbar-current a {
+  color: #ffffff;
+}
+
+
+//垂直效果
+.mo-navbar-Vertical li {
+  background: $color-grey;
+}
+
+.mo-navbar-Vertical .mo-navbar-current {
+  background: $navbar-cur-color;
+}
+
+.mo-navbar-Vertical .mo-navbar-current a {
+  color: #ffffff;
+}
+
+
+//默认效果
+.mo-navbar-Default li {
+  @include pull-left;
+  display: block;
+  background: $color-grey;
+}
+
+.mo-navbar-Default .mo-navbar-current {
+  background: $navbar-cur-color;
+}
+
+.mo-navbar-Default .mo-navbar-current a {
+  color: #ffffff;
+}

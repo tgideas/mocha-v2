@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="robots" content="all">
+  <meta name="Copyright" content="Tencent">
+  <meta name="Description" content="" />
+  <meta name="Keywords" content="" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+  <link rel="stylesheet" href="//mocha.oa.com/definitions/m/view/other/pages.min.css">
+  <title></title>
+</head>
+<script>
+  (function (win, doc) {
+    if (!win.addEventListener) return;
+    var html = document.documentElement;
+
+    function setFont() {
+      var cliWidth = html.clientWidth;
+      html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+    }
+    win.addEventListener('resize', setFont, false);
+    setFont();
+  })(window, document);
+</script>
+
+<body>
+  <ul class="mo-pages-Default">
+    <li><a href="#">上一页</a></li>
+    <li><a href="#">下一页</a></li>
+  </ul>
+
+  <ul class="mo-pages">
+    <li><a href="#">上一页</a></li>
+    <li class="mo-pages-cur"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">下一页</a></li>
+  </ul>
+
+  <ul class="mo-pages mo-pages-Lg">
+    <li><a href="#">上一页</a></li>
+    <li class="mo-pages-cur"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">下一页</a></li>
+  </ul>
+
+  <ul class="mo-pages mo-pages-Sm">
+    <li><a href="#">上一页</a></li>
+    <li class="mo-pages-cur"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">下一页</a></li>
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+@import "../../basic/css/mcomm.scss";
+
+$breadcrumb-color: $color-default;
+$breadcrumb-active: $color-font-dark;
+
+.mo-breadcrumb li {
+  display: block;
+  float: left;
+}
+
+.mo-breadcrumb a {
+  color: $breadcrumb-color;
+  text-decoration: none;
+}
+
+.mo-breadcrumb .active a {
+  color: $breadcrumb-active;
+}
+
+.mo-breadcrumb>li+li:before {
+  content: "/";
+  padding: .05rem;
+}

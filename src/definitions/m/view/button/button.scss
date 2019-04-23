@@ -1,0 +1,106 @@
+@import "../../basic/css/mcomm.scss";
+
+//按钮默认样式配置
+$btn-width:1.5rem;
+$btn-height:.5rem;
+$btn-fontcolor:#ffffff;
+$btn-disable-fontcolor:#ffffff;
+
+.mo-btn {
+  display: inline-block;
+  width: $btn-width;
+  height: $btn-height;
+  line-height: $btn-height;
+  @include borderSolid($width: 1px, $color:$color-default);
+  @include borderRadius($radius: 6px);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: $btn-fontcolor;
+  font-size: $font-fontsize;
+}
+
+.mo-btn:disabled {
+  color: $btn-disable-fontcolor;
+  cursor: not-allowed;
+}
+
+.mo-btn-Default {
+  border-color: $color-grey;
+  color: $color-font;
+}
+
+.mo-btn-Default:hover {
+  border-color: $color-default-lighter;
+  color: $color-default;
+}
+
+.mo-btn-Default:disabled {
+  border-color: $color-grey-light;
+  color: $color-font-light;
+}
+
+.mo-btn-Primary {
+  border-color: $color-default-lighter;
+  background-color: $color-default;
+}
+
+.mo-btn-Primary:hover {
+  background-color: $color-default-light;
+}
+
+.mo-btn-Primary:disabled {
+  background-color: $color-default-light;
+}
+
+.mo-btn-Success {
+  border-color: $color-success-lighter;
+  background-color: $color-success;
+}
+
+.mo-btn-Success:hover {
+  background-color: $color-success-light;
+}
+
+.mo-btn-Success:disabled {
+  background-color: $color-success-light;
+}
+
+.mo-btn-Info {
+  border-color: $color-info-lighter;
+  background-color: $color-info;
+}
+
+.mo-btn-Info:hover {
+  background-color: $color-info-light;
+}
+
+.mo-btn-Info:disabled {
+  background-color: $color-info-light;
+}
+
+.mo-btn-Warning {
+  border-color: $color-warning-lighter;
+  background-color: $color-warning;
+}
+
+.mo-btn-Warning:hover {
+  background-color: $color-warning-light;
+}
+
+.mo-btn-Warning:disabled {
+  background-color: $color-warning-light;
+}
+
+.mo-btn-Danger {
+  border-color: $color-danger-lighter;
+  background-color: $color-danger;
+}
+
+.mo-btn-Danger:hover {
+  background-color: $color-danger-light;
+}
+
+.mo-btn-Danger:disabled {
+  background-color: $color-danger-light;
+}

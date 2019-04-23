@@ -8,12 +8,17 @@
   <meta name="Copyright" content="Tencent">
   <meta name="Description" content="" />
   <meta name="Keywords" content="" />
-  <link rel="stylesheet" href="//mocha.oa.com/definitions/pc/view/list/list.min.css">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+  <link rel="stylesheet" href="//mocha.oa.com/definitions/m/view/list/list.min.css">
   <title></title>
   <style>
     .list-group {
-      width: 800px;
-      margin: 10px;
+      width: 7rem;
+      margin: .1rem;
     }
 
     .badge-tips-right {
@@ -21,6 +26,19 @@
     }
   </style>
 </head>
+<script>
+  (function (win, doc) {
+    if (!win.addEventListener) return;
+    var html = document.documentElement;
+
+    function setFont() {
+      var cliWidth = html.clientWidth;
+      html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+    }
+    win.addEventListener('resize', setFont, false);
+    setFont();
+  })(window, document);
+</script>
 
 <body>
   <ul class="list-group">

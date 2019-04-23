@@ -1,0 +1,61 @@
+@import "../../basic/css/mcomm.scss";
+
+//列表组基本配置
+$list-paddingtb: $comm-padding-sm;
+$list-paddinglr: $comm-padding-md;
+$list-border-color: $color-grey;
+
+.list-group-item {
+  position: relative;
+  padding: $list-paddingtb $list-paddinglr;
+  @include borderSolid($color: $list-border-color);
+  margin-bottom: -1px;
+}
+
+.list-group-item a,
+.list-group-item-Borderbottom a {
+  text-decoration: none;
+  color: $color-font;
+}
+
+.list-group-item a:hover,
+.list-group-item-Borderbottom a:hover {
+  text-decoration: none;
+  color: $color-font-light;
+}
+
+.list-group-item:first-child {
+  @include borderRadius($radius: 4px, $direction:top-left);
+  @include borderRadius($radius: 4px, $direction:top-right);
+}
+
+.list-group-item:last-child {
+  @include borderRadius($radius: 4px, $direction:bottom-left);
+  @include borderRadius($radius: 4px, $direction:bottom-right);
+}
+
+.list-group-item-Borderbottom {
+  position: relative;
+  padding: $list-paddingtb $list-paddinglr;
+  border-bottom: 1px solid $list-border-color;
+}
+
+.list-group-item-Borderbottom:last-child {
+  border-bottom: none;
+}
+
+.list-group-item .badge-tips-right,
+.list-group-item-Borderbottom .badge-tips-right {
+  position: absolute;
+  right: $list-paddinglr;
+}
+
+.list-group-item .badge-tips-left,
+.list-group-item-Borderbottom .badge-tips-left {
+  margin-right: $list-paddinglr/2;
+}
+
+.list-group-item a,
+.list-group-item-Borderbottom a {
+  display: block;
+}
