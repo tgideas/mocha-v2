@@ -1,7 +1,3 @@
-body {
-  font-family: Helvetica, Tahoma, Arial, "PingFang SC", STXihei, "Microsoft yahei", "WenQuanYi Micro Hei", sans-serif;
-}
-
 .mo-article-title {
   font-size: 0.26rem;
 }
@@ -77,6 +73,7 @@ p,
   color: #cccccc;
 }
 
+html,
 body {
   font-family: Helvetica, Tahoma, Arial, "PingFang SC", STXihei, "Microsoft yahei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 0.16rem;
@@ -96,15 +93,26 @@ h2 {
   font-size: 0.22rem;
 }
 
-h3 {
+h3,
+.mo-article-time {
   font-size: 0.2rem;
 }
 
 h4,
-p {
+p,
+.mo-article-content {
   font-size: 0.16rem;
+  line-height: 1.6;
 }
 
-.mo-small-font {
+.mo-font-small {
   font-size: 0.12rem;
+}
+
+.mo-article-title {
+  font-size: 0.26rem;
+}
+
+.mo-article-subtitle {
+  font-size: 0.22rem;
 }

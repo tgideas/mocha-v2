@@ -2,7 +2,7 @@
 @import '../../../comm/basic/css/reset.scss';
 
 //font
-@import 'font.scss';
+@import './font.scss';
 
 //border
 @import '../../../comm/basic/css/border.scss';
@@ -14,4 +14,7 @@
 @import '../../../comm/basic/css/mixin.scss';
 
 //spacing
-@import 'spacing.scss';
+@import './spacing.scss';
+
+//composing
+@import './composing.scss';

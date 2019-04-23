@@ -1,0 +1,82 @@
+@import "../../basic/css/mcomm.scss";
+
+//卡片默认样式配置
+$card-bgcolor: $color-grey-lighter;
+$card-padding:$comm-padding-md;
+$card-margin: $comm-margin-md;
+$card-width:6rem;
+
+.mo-card {
+  width: $card-width;
+  @include borderRadius;
+  @include borderSolid;
+  margin: $card-margin;
+  color: $color-font;
+}
+
+.mo-card-header {
+  position: relative;
+  @include borderSolid($direction: bottom);
+  padding: $card-padding;
+  background-color: $card-bgcolor;
+}
+
+.mo-card-body {
+  padding: $card-padding;
+}
+
+.mo-card-footer {
+  padding: $card-padding;
+  @include borderSolid($direction: top);
+}
+
+//情境效果
+.mo-card-Primary,
+.mo-card-Primary .mo-card-header,
+.mo-card-Primary .mo-card-footer {
+  border-color: $color-default-light;
+}
+
+.mo-card-Primary .mo-card-header {
+  background-color: $color-default;
+}
+
+.mo-card-Success,
+.mo-card-Success .mo-card-header,
+.mo-card-Success .mo-card-footer {
+  border-color: $color-success-light;
+}
+
+.mo-card-Success .mo-card-header {
+  background-color: $color-success;
+}
+
+.mo-card-Info,
+.mo-card-Info .mo-card-header,
+.mo-card-Info .mo-card-footer {
+  border-color: $color-info-light;
+}
+
+.mo-card-Info .mo-card-header {
+  background-color: $color-info;
+}
+
+.mo-card-Warning,
+.mo-card-Warning .mo-card-header,
+.mo-card-Warning .mo-card-footer {
+  border-color: $color-warning-light;
+}
+
+.mo-card-Warning .mo-card-header {
+  background-color: $color-warning;
+}
+
+.mo-card-Danger,
+.mo-card-Danger .mo-card-header,
+.mo-card-Danger .mo-card-footer {
+  border-color: $color-danger-light;
+}
+
+.mo-card-Danger .mo-card-header {
+  background-color: $color-danger;
+}

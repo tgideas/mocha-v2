@@ -345,3 +345,77 @@ p,
 .mo-article-subtitle {
   font-size: 0.22rem;
 }
+
+.mo-card {
+  width: 6rem;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+  margin: 0.15rem;
+  color: #595a5c;
+}
+
+.mo-card-header {
+  position: relative;
+  border-bottom: 1px solid #cccccc;
+  padding: 0.15rem;
+  background-color: #e9e9e9;
+}
+
+.mo-card-body {
+  padding: 0.15rem;
+}
+
+.mo-card-footer {
+  padding: 0.15rem;
+  border-top: 1px solid #cccccc;
+}
+
+.mo-card-Primary,
+.mo-card-Primary .mo-card-header,
+.mo-card-Primary .mo-card-footer {
+  border-color: #5c95c5;
+}
+
+.mo-card-Primary .mo-card-header {
+  background-color: #337ab7;
+}
+
+.mo-card-Success,
+.mo-card-Success .mo-card-header,
+.mo-card-Success .mo-card-footer {
+  border-color: #7dc67d;
+}
+
+.mo-card-Success .mo-card-header {
+  background-color: #5cb85c;
+}
+
+.mo-card-Info,
+.mo-card-Info .mo-card-header,
+.mo-card-Info .mo-card-footer {
+  border-color: #7ccde5;
+}
+
+.mo-card-Info .mo-card-header {
+  background-color: #5bc0de;
+}
+
+.mo-card-Warning,
+.mo-card-Warning .mo-card-header,
+.mo-card-Warning .mo-card-footer {
+  border-color: #f3bd71;
+}
+
+.mo-card-Warning .mo-card-header {
+  background-color: #f0ad4e;
+}
+
+.mo-card-Danger,
+.mo-card-Danger .mo-card-header,
+.mo-card-Danger .mo-card-footer {
+  border-color: #e17572;
+}
+
+.mo-card-Danger .mo-card-header {
+  background-color: #d9534f;
+}

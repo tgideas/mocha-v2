@@ -29,6 +29,25 @@ p {
   font-size: $font-fontsize;
 }
 
-.mo-small-font {
+.mo-article-title {
+  font-size: $font-titlesize;
+}
+
+.mo-article-subtitle {
+  font-size: $font-subsize;
+}
+
+h3,
+.mo-article-time {
+  font-size: $font-decssize;
+}
+
+p,
+.mo-article-content {
+  font-size: $font-fontsize;
+  line-height: $font-lineheight;
+}
+
+.mo-font-small {
   font-size: $font-smallsize;
 }

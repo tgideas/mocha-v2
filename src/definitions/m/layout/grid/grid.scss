@@ -1,0 +1,60 @@
+@import "../../basic/css/mcomm.scss";
+
+//栅格默认样式配置
+$grid-padding:$comm-padding-sm;
+$grid-bgcolor:$color-default;
+$grid-border:$color-default-light;
+
+@mixin innerStyle {
+  background-color: $grid-bgcolor;
+  @include borderSolid($color: $grid-border);
+  padding: $grid-padding;
+}
+
+@mixin outerStyle {
+  @include pull-left;
+  box-sizing: border-box;
+  padding: $grid-padding;
+}
+
+//栅格化
+@mixin generateGrid($scr_flag) {
+  @if $scr_flag {
+    @for $i from 1 through 12 {
+      .mo-col-md-#{$i} {
+        width: (100% / 12 * $i);
+      }
+    }
+  }
+
+  @else {
+    @for $i from 1 through 12 {
+      .mo-col-sm-#{$i} {
+        width: (100% / 12 * $i);
+      }
+    }
+  }
+}
+
+.mo-wrapper {
+  @include clearfix;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.mo-outer {
+  @include outerStyle;
+}
+
+.mo-inner {
+  @include clearfix;
+  @include innerStyle;
+}
+
+@media (min-width:769px) {
+  @include generateGrid(true);
+}
+
+@media (max-width:768px) {
+  @include generateGrid(false);
+}

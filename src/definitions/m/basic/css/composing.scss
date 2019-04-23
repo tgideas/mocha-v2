@@ -1,6 +1,7 @@
 @import 'font.scss';
 @import '../../../comm/basic/css/color.scss';
 
+html,
 body {
   font-family: $font-fontfamily;
   font-size: $font-fontsize;
@@ -20,15 +21,26 @@ h2 {
   font-size: $font-subsize;
 }
 
-h3 {
+h3,
+.mo-article-time {
   font-size: $font-decssize;
 }
 
 h4,
-p {
+p,
+.mo-article-content {
   font-size: $font-fontsize;
+  line-height: $font-lineheight;
 }
 
-.mo-small-font {
+.mo-font-small {
   font-size: $font-smallsize;
+}
+
+.mo-article-title {
+  font-size: $font-titlesize;
+}
+
+.mo-article-subtitle {
+  font-size: $font-subsize;
 }

@@ -1,3 +1,31 @@
+.mo-color-default {
+  color: #337ab7;
+}
+
+.mo-color-success {
+  color: #5cb85c;
+}
+
+.mo-color-info {
+  color: #5bc0de;
+}
+
+.mo-color-warning {
+  color: #f0ad4e;
+}
+
+.mo-color-danger {
+  color: #d9534f;
+}
+
+.mo-color-dark {
+  color: #595a5c;
+}
+
+.mo-color-grey {
+  color: #cccccc;
+}
+
 body {
   font-family: Helvetica, Tahoma, Arial, "PingFang SC", STXihei, "Microsoft yahei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 16px;
@@ -26,6 +54,25 @@ p {
   font-size: 16px;
 }
 
-.mo-small-font {
+.mo-article-title {
+  font-size: 26px;
+}
+
+.mo-article-subtitle {
+  font-size: 22px;
+}
+
+h3,
+.mo-article-time {
+  font-size: 20px;
+}
+
+p,
+.mo-article-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.mo-font-small {
   font-size: 12px;
 }
