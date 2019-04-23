@@ -27,3 +27,4 @@ var gulp = require('gulp'),
 *******************************/
 exports.clean = clean;
 exports["build-css"] = buildCSS;
+exports["build-js"] = buildJS;
