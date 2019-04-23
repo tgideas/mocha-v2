@@ -1,0 +1,51 @@
+@import "../../basic/css/mcomm.scss";
+
+//flex基本配置
+$flex-margin: $comm-margin-sm;
+
+.mo-flex-wrapper {
+  display: flex;
+}
+
+.mo-flex {
+  flex: 1;
+}
+
+.mo-flex-item {
+  box-sizing: border-box;
+  margin: $flex-margin;
+}
+
+@for $i from 1 through 12 {
+  .mo-flex-#{$i} {
+    flex: #{$i};
+  }
+}
+
+.mo-flex-Stretch {
+  align-items: flex-start;
+}
+
+.mo-flex-Center {
+  align-items: center;
+}
+
+.mo-flex-End {
+  align-items: flex-end;
+}
+
+.mo-flex-JustifyEnd {
+  justify-content: flex-end;
+}
+
+.mo-flex-JustifyCenter {
+  justify-content: center;
+}
+
+.mo-flex-JustifyBetween {
+  justify-content: space-between;
+}
+
+.mo-flex-JustifyAround {
+  justify-content: space-around;
+}

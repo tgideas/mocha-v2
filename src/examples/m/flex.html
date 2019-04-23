@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="robots" content="all">
+  <meta name="Copyright" content="Tencent">
+  <meta name="Description" content="" />
+  <meta name="Keywords" content="" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+  <link rel="stylesheet" href="//mocha.oa.com/definitions/m/layout/flex/flex.min.css">
+  <title></title>
+  <style>
+    .mo-flex-wrapper div {
+      height: 1rem;
+      background-color: #337ab7;
+      font-size: .1rem;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<script>
+  (function (win, doc) {
+    if (!win.addEventListener) return;
+    var html = document.documentElement;
+
+    function setFont() {
+      var cliWidth = html.clientWidth;
+      html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+    }
+    win.addEventListener('resize', setFont, false);
+    setFont();
+  })(window, document);
+</script>
+
+<body>
+  <div class="mo-flex-wrapper">
+    <div class="mo-flex mo-flex-item"></div>
+    <div class="mo-flex mo-flex-item"></div>
+    <div class="mo-flex mo-flex-item"></div>
+    <div class="mo-flex mo-flex-item"></div>
+  </div>
+
+  <div class="mo-flex-wrapper">
+    <div class="mo-flex-1 mo-flex-item"></div>
+    <div class="mo-flex-2 mo-flex-item"></div>
+    <div class="mo-flex-4 mo-flex-item"></div>
+    <div class="mo-flex-5 mo-flex-item"></div>
+  </div>
+
+  <div class="mo-flex-wrapper mo-flex-Start">
+    <div class="mo-flex mo-flex-item" style="height:2rem;"></div>
+    <div class="mo-flex mo-flex-item" style="line-height:1rem">顶部对齐</div>
+  </div>
+
+  <div class="mo-flex-wrapper mo-flex-Center">
+    <div class="mo-flex mo-flex-item" style="height:2rem;"></div>
+    <div class="mo-flex mo-flex-item" style="line-height:1rem">顶部对齐</div>
+  </div>
+
+  <div class="mo-flex-wrapper mo-flex-End">
+    <div class="mo-flex mo-flex-item" style="height:2rem;"></div>
+    <div class="mo-flex mo-flex-item" style="line-height:1rem">顶部对齐</div>
+  </div>
+
+  <div class="mo-flex-wrapper mo-flex-JustifyEnd">
+    <div class="mo-flex-item">JustifyEnd</div>
+    <div class="mo-flex-item">底部排列</div>
+  </div>
+
+  <div class="mo-flex-wrapper mo-flex-JustifyCenter">
+    <div class="mo-flex-item">JustifyCenter</div>
+    <div class="mo-flex-item">居中排列</div>
+  </div>
+
+  <div class="mo-flex-wrapper mo-flex-JustifyBetween">
+    <div class="mo-flex-item">JustifyBetween</div>
+    <div class="mo-flex-item">左右排列</div>
+  </div>
+
+  <div class="mo-flex-wrapper mo-flex-JustifyAround">
+    <div class="mo-flex-item">JustifyAround</div>
+    <div class="mo-flex-item">平均排列</div>
+  </div>
+</body>
+
+</html>
