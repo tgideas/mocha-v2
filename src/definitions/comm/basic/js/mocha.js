@@ -30,7 +30,7 @@ var mo = (function () {
      * require mow.js
      */
     util.slider = function (p) {
-        var componentJS = 'mow.js',
+        var componentJS = 'http://mocha.oa.com/v2/definitions/comm/basic/js/mow.js',
             selector = p.selector,
             componentConfig = p.moConfig || {
                 index: 0,
