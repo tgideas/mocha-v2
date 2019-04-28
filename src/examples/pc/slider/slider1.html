@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
+  <title>slider1 Demo</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="robots" content="all">
@@ -12,44 +12,36 @@
   <link rel="stylesheet" href="//mocha.oa.com/definitions/pc/interaction/slider/slider.min.css">
   <style>
     .mo-slider-container {
-      width: 800px;
+      width: 400px;
       margin: 0 auto;
     }
-
     .mo-triangle-left,
     .mo-triangle-right {
       font-size: 30px;
       color: #cccccc;
     }
-
     .mow-slider-panel {
-      font-size: 100px;
-      line-height: 400px;
+      font-size: 60px;
+      line-height: 200px;
       text-align: center;
       color: #fff;
     }
-
     .mow-slider-panel:nth-child(1) {
       background: #337ab7
     }
-
     .mow-slider-panel:nth-child(2) {
       background: #5cb85c
     }
-
     .mow-slider-panel:nth-child(3) {
       background: #5bc0de
     }
-
     .mow-slider-panel:nth-child(4) {
       background: #f0ad4e
     }
-
     .mow-slider-panel:nth-child(5) {
       background: #d9534f
     }
   </style>
-  <title></title>
 </head>
 <body>
 <div id="slider" class="mow-slider-container mo-slider-container">
@@ -72,19 +64,19 @@
 </div>
 <script src="//mocha.oa.com/definitions/comm/basic/js/mocha.js"></script>
 <script>
-    // Slider + 分页 + 左右
-    // moConfig默认配置(不自动播放)
-    mo.slider({
-        selector: "#slider",
-        moConfig: {
-        index: 0,
-        effect: 'fade',
-        direction: 'y',
-        autoplay: 3000,
-        speed: 500,
-        ease: 'linear'
-        }
-    });
+// Slider + 分页 + 左右
+// moConfig默认配置(不自动播放)
+mo.slider({
+    selector: "#slider",
+    moConfig: {
+    index: 0,
+    effect: 'fade',
+    direction: 'y',
+    autoplay: 3000,
+    speed: 500,
+    ease: 'linear'
+    }
+});
 </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<title>slider2 Demo</title>
+<title>slider4 Demo</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="robots" content="all">
@@ -44,7 +44,7 @@
 </style>
 </head>
 <body>
-<div id="slider2" class="mow-slider-container mo-slider-container">
+<div id="slider4" class="mow-slider-container mo-slider-container">
     <div class="mow-slider-wrapper mo-slider-wrapper">
         <div class="mow-slider-panel mo-slider-panel">1</div>
         <div class="mow-slider-panel mo-slider-panel">2</div>
@@ -52,22 +52,20 @@
         <div class="mow-slider-panel mo-slider-panel">4</div>
         <div class="mow-slider-panel mo-slider-panel">5</div>
     </div>
-    <div class="mo-slider-prev"><span class="mo-triangle-left"></span></div>
-    <div class="mo-slider-next"><span class="mo-triangle-right"></span></div>
 </div>
 <script src="//mocha.oa.com/definitions/comm/basic/js/mocha.js"></script>
 <script>
-// Slider + 左右箭头
+// 单Slider
 // moConfig自定义配置
 mo.slider({
-    selector: "#slider2",
+    selector: "#slider4",
     moConfig: {
-    index: 0,
-    effect: 'fade',
-    direction: 'y',
-    autoplay: 3000,
-    speed: 500,
-    ease: 'linear'
+        index: 0,
+        effect: 'fade',
+        direction: 'y',
+        autoplay: 2000,
+        speed: 500,
+        ease: 'linear'
     }
 });
 </script>
